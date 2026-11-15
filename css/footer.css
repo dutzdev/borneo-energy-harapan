@@ -1,0 +1,147 @@
+/* =================================================================
+   BORNEO ENERGY HARAPAN — css/footer.css
+   Footer Grid, Link Kolom, Copyright Bar & Tombol Back to Top
+================================================================= */
+
+.footer {
+  background: #060E1A;
+  border-top: 1px solid rgba(66,165,245,.1);
+}
+
+.footer__inner {
+  display: grid;
+  grid-template-columns: 1.8fr 1fr 1fr 1.5fr;
+  gap: 48px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.footer__logo {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 14px;
+}
+
+.footer__logo-img {
+  height: 40px;
+  width: auto;
+  max-width: 130px;
+  object-fit: contain;
+  border-radius: var(--radius-sm);
+  background: var(--white);
+  padding: 3px 8px;
+  flex-shrink: 0;
+  box-shadow: 0 2px 10px rgba(0,0,0,.25);
+  image-rendering: -webkit-optimize-contrast;
+}
+
+.footer__tagline {
+  font-size: .88rem;
+  color: rgba(255,255,255,.45);
+  line-height: 1.6;
+}
+.footer__tagline--sub { 
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.footer__sister-logo {
+  height: 24px;
+  width: auto;
+  background: var(--white);
+  padding: 2px 6px;
+  border-radius: var(--radius-sm);
+  display: inline-block;
+}
+.footer__tagline strong { color: var(--sky-light); }
+
+.footer__col h5 {
+  font-family: var(--font-head);
+  font-size: .85rem;
+  font-weight: 700;
+  color: var(--white);
+  letter-spacing: .05em;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.footer__col ul {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.footer__col li,
+.footer__col a {
+  font-size: .88rem;
+  color: rgba(255,255,255,.5);
+  transition: var(--transition);
+}
+.footer__col a:hover { color: var(--sky); }
+
+.footer__col--contact li {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+}
+.footer__col--contact i {
+  color: var(--sky);
+  margin-top: 2px;
+  flex-shrink: 0;
+  width: 14px;
+}
+
+.footer__bottom {
+  border-top: 1px solid rgba(255,255,255,.06);
+  padding: 20px 0;
+}
+
+.footer__bottom-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.footer__bottom p {
+  font-size: .82rem;
+  color: rgba(255,255,255,.3);
+}
+
+/* Tombol Back to Top (Floating Action Button Stack) */
+.back-to-top {
+  position: fixed;
+  bottom: 98px;
+  right: 32px;
+  width: 48px;
+  height: 48px;
+  background: linear-gradient(135deg, var(--blue-light), var(--sky));
+  color: var(--white);
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.05rem;
+  box-shadow: 0 4px 16px rgba(21,101,192,.35);
+  opacity: 0;
+  pointer-events: none;
+  transform: translateY(12px);
+  transition: var(--transition);
+  z-index: 998;
+}
+
+.back-to-top.visible {
+  opacity: 1;
+  pointer-events: auto;
+  transform: translateY(0);
+}
+
+.back-to-top:hover {
+  transform: translateY(-3px) scale(1.06);
+  box-shadow: 0 8px 24px rgba(21,101,192,.5);
+}

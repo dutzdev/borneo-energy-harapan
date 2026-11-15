@@ -1,0 +1,173 @@
+/* =================================================================
+   BORNEO ENERGY HARAPAN — css/supply.css
+   Layout & Kartu Electrical Supply (Material & Testing Tools)
+================================================================= */
+
+.supply__grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 32px;
+  margin-bottom: 48px;
+}
+
+.supply-card {
+  background: var(--white);
+  border: 1px solid var(--gray-200);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  box-shadow: var(--shadow-sm);
+  transition: var(--transition);
+  display: flex;
+  flex-direction: column;
+}
+
+.supply-card:hover {
+  transform: translateY(-6px);
+  box-shadow: var(--shadow-lg);
+  border-color: rgba(21,101,192,.3);
+}
+
+.supply-card__img-wrap {
+  position: relative;
+  width: 100%;
+  height: 220px;
+  background: #F8FAFD;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  border-bottom: 1px solid var(--gray-200);
+  overflow: hidden;
+}
+
+.supply-card__img {
+  max-width: 90%;
+  max-height: 180px;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+  transition: transform .4s ease;
+}
+
+.supply-card:hover .supply-card__img {
+  transform: scale(1.05);
+}
+
+.supply-card__badge {
+  position: absolute;
+  top: 14px;
+  right: 14px;
+  font-size: .72rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: .06em;
+  background: rgba(10,22,40,.85);
+  backdrop-filter: blur(8px);
+  color: var(--sky-light);
+  padding: 4px 12px;
+  border-radius: 50px;
+  border: 1px solid rgba(66,165,245,.2);
+}
+
+.supply-card__body {
+  padding: 28px;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.supply-card__cat {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: .78rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: .05em;
+  color: var(--blue-light);
+  margin-bottom: 8px;
+}
+
+.supply-card__title {
+  font-family: var(--font-head);
+  font-size: 1.2rem;
+  font-weight: 800;
+  color: var(--navy);
+  margin-bottom: 12px;
+  line-height: 1.35;
+}
+
+.supply-card__desc {
+  font-size: .88rem;
+  color: var(--text-mid);
+  line-height: 1.7;
+  margin-bottom: 20px;
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+.supply-card__specs {
+  list-style: none;
+  margin-top: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding-top: 16px;
+  border-top: 1px dashed var(--gray-200);
+}
+
+.supply-card__specs li {
+  font-size: .82rem;
+  color: var(--text-dark);
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+  line-height: 1.45;
+}
+
+.supply-card__specs li i {
+  color: var(--blue-light);
+  font-size: .75rem;
+  margin-top: 4px;
+  flex-shrink: 0;
+}
+
+/* Supply CTA Banner */
+.supply__cta-banner {
+  background: linear-gradient(135deg, var(--navy) 0%, var(--navy-mid) 100%);
+  border-radius: var(--radius-lg);
+  padding: 32px 36px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 28px;
+  box-shadow: var(--shadow-md);
+  border: 1px solid rgba(66,165,245,.2);
+}
+
+.supply__cta-content {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.supply__cta-icon {
+  font-size: 2.4rem;
+  color: var(--sky);
+  flex-shrink: 0;
+}
+
+.supply__cta-content h4 {
+  font-family: var(--font-head);
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: var(--white);
+  margin-bottom: 6px;
+}
+
+.supply__cta-content p {
+  font-size: .88rem;
+  color: rgba(255,255,255,.75);
+  line-height: 1.55;
+}
+

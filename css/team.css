@@ -1,0 +1,213 @@
+/* =================================================================
+   BORNEO ENERGY HARAPAN — css/team.css
+   Layout Tim & Struktur Organisasi (Our Team)
+================================================================= */
+
+/* Leadership Row */
+.team__leadership {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 28px;
+  max-width: 880px;
+  margin: 0 auto 52px;
+}
+
+.team-card--lead {
+  background: linear-gradient(135deg, var(--white) 0%, #F0F6FF 100%);
+  border: 2px solid rgba(21,101,192,.22);
+  border-radius: var(--radius-lg);
+  padding: 36px 28px;
+  text-align: center;
+  box-shadow: var(--shadow-md);
+  transition: var(--transition);
+  position: relative;
+  overflow: hidden;
+}
+
+.team-card--lead::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  height: 5px;
+  background: linear-gradient(90deg, var(--blue-light), var(--sky));
+}
+
+.team-card--lead:hover {
+  transform: translateY(-6px);
+  box-shadow: var(--shadow-lg);
+  border-color: var(--blue-light);
+}
+
+.team-card__avatar {
+  width: 76px;
+  height: 76px;
+  margin: 0 auto 18px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, var(--navy), var(--navy-light));
+  color: var(--sky-light);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  box-shadow: 0 8px 20px rgba(10,22,40,.2);
+}
+
+.team-card__role {
+  display: inline-block;
+  font-size: .8rem;
+  font-weight: 700;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+  color: var(--blue-light);
+  background: rgba(21,101,192,.08);
+  padding: 4px 14px;
+  border-radius: 50px;
+  margin-bottom: 12px;
+}
+
+.team-card--lead .team-card__name {
+  font-family: var(--font-head);
+  font-size: 1.25rem;
+  font-weight: 800;
+  color: var(--navy);
+  margin-bottom: 8px;
+}
+
+.team-card--lead .team-card__desc {
+  font-size: .86rem;
+  color: var(--text-mid);
+  line-height: 1.6;
+}
+
+/* Department Section Headers */
+.team__dept-heading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 36px 0 24px;
+}
+
+.team__dept-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  font-family: var(--font-head);
+  font-size: .92rem;
+  font-weight: 700;
+  color: var(--navy);
+  background: var(--white);
+  border: 1px solid var(--gray-200);
+  box-shadow: var(--shadow-sm);
+  padding: 8px 20px;
+  border-radius: 50px;
+  letter-spacing: .02em;
+}
+
+.team__dept-badge i {
+  color: var(--blue-light);
+}
+
+.team__dept-badge--eng i {
+  color: #D97706;
+}
+
+/* Support Grid */
+.team__grid--support {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 18px;
+  margin-bottom: 40px;
+}
+
+/* Engineering Grid */
+.team__grid--eng {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 18px;
+}
+
+.team-card {
+  background: var(--white);
+  border: 1px solid var(--gray-200);
+  border-radius: var(--radius-md);
+  padding: 22px 18px;
+  text-align: center;
+  transition: var(--transition);
+  box-shadow: var(--shadow-sm);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.team-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-md);
+  border-color: var(--blue-light);
+}
+
+.team-card__icon {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: rgba(21,101,192,.08);
+  color: var(--blue-light);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.25rem;
+  margin-bottom: 14px;
+  transition: var(--transition);
+}
+
+.team-card:hover .team-card__icon {
+  background: var(--blue-light);
+  color: var(--white);
+  transform: scale(1.08);
+}
+
+.team-card__icon--eng {
+  background: rgba(245,158,11,.1);
+  color: #D97706;
+}
+
+.team-card--engineer:hover .team-card__icon--eng {
+  background: #D97706;
+  color: var(--white);
+}
+
+.team-card__dept {
+  font-size: .75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: var(--text-light);
+  letter-spacing: .05em;
+  margin-bottom: 6px;
+}
+
+.team-card__title {
+  font-size: .78rem;
+  font-weight: 700;
+  color: #D97706;
+  margin-bottom: 8px;
+}
+
+.team-card__member {
+  font-family: var(--font-head);
+  font-size: .95rem;
+  font-weight: 700;
+  color: var(--navy);
+  margin-bottom: 10px;
+  line-height: 1.35;
+}
+
+.team-card__tag {
+  margin-top: auto;
+  font-size: .72rem;
+  color: var(--text-light);
+  background: var(--gray-100);
+  padding: 4px 10px;
+  border-radius: 4px;
+  border: 1px solid var(--gray-200);
+  line-height: 1.3;
+}
+

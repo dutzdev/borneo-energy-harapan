@@ -1,0 +1,17 @@
+/* =================================================================
+   BORNEO ENERGY HARAPAN — css/style.css (Master Modular Stylesheet)
+   Menggabungkan seluruh modul CSS spesifik per fungsi & komponen
+================================================================= */
+
+@import 'variables.css';
+@import 'navbar.css';
+@import 'hero.css';
+@import 'about.css';
+@import 'services.css';
+@import 'projects.css';
+@import 'supply.css';
+@import 'team.css';
+@import 'certifications.css';
+@import 'contact.css';
+@import 'footer.css';
+@import 'responsive.css';

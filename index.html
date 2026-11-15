@@ -1,0 +1,1734 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Borneo Energy Harapan (BEH) – Solusi EPC dan Energi Terbarukan terpercaya di Kalimantan Timur. Solar PV, Civil & Structure, Mechanical & Electrical, Power Plant, Oil & Gas, General Supply." />
+  <title>Borneo Energy Harapan | Together for a Brighter Future</title>
+  
+  <!-- CSS Utama (Memuat css/variables.css, css/navbar.css, dll) -->
+  <link rel="stylesheet" href="css/style.css" />
+  
+  <!-- Fonts & Icons Resmi -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+
+  <!-- =========================================================
+       1. NAVBAR (File Terpisah: sections/navbar.html | css/navbar.css | js/navbar.js)
+  ========================================================= -->
+  <header class="navbar" id="navbar">
+    <div class="container navbar__inner">
+      <a href="#hero" class="navbar__logo" aria-label="Beranda BEH">
+        <img src="assets/images/logo-beh.png" alt="Logo Borneo Energy Harapan" class="navbar__logo-img" />
+        <div class="logo-text">
+          <span class="logo-text__main">BEH</span>
+          <span class="logo-text__sub">Borneo Energy Harapan</span>
+        </div>
+      </a>
+
+      <nav class="navbar__nav" id="navMenu" aria-label="Navigasi Utama">
+        <ul class="navbar__list">
+          <li><a href="#hero"     class="navbar__link active">Beranda</a></li>
+          <li><a href="#about"    class="navbar__link">Tentang Kami</a></li>
+          <li><a href="#services" class="navbar__link">Layanan</a></li>
+          <li><a href="#supply"   class="navbar__link">Electrical Supply</a></li>
+          <li><a href="#projects" class="navbar__link">Proyek</a></li>
+          <li><a href="#team"     class="navbar__link">Tim Kami</a></li>
+          <li><a href="#cert"     class="navbar__link">Sertifikasi</a></li>
+          <li><a href="#contact"  class="navbar__link">Kontak</a></li>
+        </ul>
+      </nav>
+
+      <a href="#contact" class="btn btn--primary navbar__cta">Hubungi Kami</a>
+
+      <button class="navbar__burger" id="burgerBtn" aria-label="Buka Menu Navigasi" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- =========================================================
+       2. HERO SECTION (File Terpisah: sections/hero.html | css/hero.css | js/counters.js & js/particles.js)
+  ========================================================= -->
+  <section class="hero" id="hero">
+    <div class="hero__overlay"></div>
+    <div class="hero__particles" id="heroParticles"></div>
+
+    <div class="container hero__content">
+      <div class="hero__badge">
+        <span class="pulse-dot"></span>
+        EPC &amp; Renewable Energy Solutions
+      </div>
+      <h1 class="hero__title">
+        <span class="hero__title--main">Together for a</span>
+        <span class="hero__title--accent">Brighter Future</span>
+      </h1>
+      <p class="hero__subtitle">
+        We Provide <strong>Power and Renewable Energy Solution</strong> — spesialis EPC Solar PV,
+        Civil &amp; Structure, Mechanical &amp; Electrical, Power Plant, serta Oil &amp; Gas di Kalimantan Timur.
+      </p>
+      <div class="hero__actions">
+        <a href="#contact" class="btn btn--primary btn--lg">
+          <i class="fa-solid fa-paper-plane"></i> Hubungi Kami
+        </a>
+        <a href="assets/docs/Compro-BEH-2025.pdf" target="_blank" rel="noopener" class="btn btn--outline btn--lg">
+          <i class="fa-solid fa-file-pdf"></i> Unduh Company Profile
+        </a>
+      </div>
+      <div class="hero__stats">
+        <div class="stat-item">
+          <span class="stat-item__number" data-target="23">0</span><span class="stat-item__suffix">+</span>
+          <span class="stat-item__label">Proyek Selesai</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat-item">
+          <span class="stat-item__number" data-target="37">0</span><span class="stat-item__suffix">+</span>
+          <span class="stat-item__label">Mitra Industri</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat-item">
+          <span class="stat-item__number" data-target="8">0</span><span class="stat-item__suffix">+</span>
+          <span class="stat-item__label">Tahun Pengalaman</span>
+        </div>
+      </div>
+    </div>
+
+    <a href="#about" class="hero__scroll-indicator" aria-label="Gulir ke Tentang Kami">
+      <span>Scroll</span>
+      <span class="scroll-arrow"><i class="fa-solid fa-chevron-down"></i></span>
+    </a>
+  </section>
+
+  <!-- Sister Company Banner -->
+  <div class="sister-banner">
+    <div class="container sister-banner__inner">
+      <span class="sister-banner__label">Sister Company of</span>
+      <div class="sister-banner__brand" title="Energy Lima Pilar (ELP)">
+        <img src="assets/images/logo-energy-lima-pilar.png" alt="Logo Energy Lima Pilar" class="sister-banner__logo" />
+        <span class="sister-banner__text">Energy Lima Pilar</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- =========================================================
+       3. ABOUT US & VISI MISI (File Terpisah: sections/about.html | css/about.css)
+  ========================================================= -->
+  <section class="about section" id="about">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Tentang Kami</span>
+        <h2 class="section-title">Siapa <span class="text-accent">Kami?</span></h2>
+        <p class="section-desc">
+          Perusahaan EPC dan energi terbarukan yang berpusat di Balikpapan, Kalimantan Timur.
+        </p>
+      </div>
+
+      <div class="about__grid">
+        <div class="about__visual">
+          <div class="about__img-wrapper">
+            <img src="assets/images/about-project.jpg" alt="Dokumentasi Instalasi Proyek Solar PV Borneo Energy Harapan" class="about__img" loading="lazy" />
+            <div class="about__img-overlay"></div>
+          </div>
+          <div class="about__badge about__badge--top">
+            <i class="fa-solid fa-solar-panel"></i>
+            <div>
+              <strong>Solar PV &amp; EPC</strong>
+              <span>Instalasi Berstandar Tinggi</span>
+            </div>
+          </div>
+          <div class="about__badge about__badge--bottom">
+            <i class="fa-solid fa-shield-halved"></i>
+            <div>
+              <strong>100% Komitmen HSE</strong>
+              <span>Standar Keselamatan K3</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="about__content">
+          <p class="about__text">
+            <strong>Borneo Energy Harapan (BEH)</strong> adalah perusahaan mapan yang berspesialisasi dalam layanan teknik
+            (<em>engineering</em>), pengadaan (<em>procurement</em>), dan manajemen proyek (<em>EPC</em>) untuk industri
+            energi dan sumber daya.
+          </p>
+          <p class="about__text">
+            Fokus utama layanan kami meliputi <strong>Solar PV</strong>, Civil &amp; Structure,
+            Mechanical &amp; Electrical Equipment, Power Plant, Oil and Gas, serta Material and General Supply.
+          </p>
+
+          <div class="about__tags">
+            <span class="tag"><i class="fa-solid fa-solar-panel"></i> Solar PV</span>
+            <span class="tag"><i class="fa-solid fa-hard-hat"></i> Civil &amp; Structure</span>
+            <span class="tag"><i class="fa-solid fa-bolt"></i> Power Plant</span>
+            <span class="tag"><i class="fa-solid fa-oil-well"></i> Oil &amp; Gas</span>
+            <span class="tag"><i class="fa-solid fa-gear"></i> M&amp;E Equipment</span>
+            <span class="tag"><i class="fa-solid fa-box"></i> General Supply</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Visi & Misi -->
+      <div class="vision-mission">
+        <div class="vision-mission__header">
+          <i class="fa-solid fa-bullseye"></i>
+          <h3>Visi &amp; Misi</h3>
+        </div>
+        <div class="vision-mission__grid">
+          <div class="vm-card">
+            <div class="vm-card__icon"><i class="fa-solid fa-trophy"></i></div>
+            <div class="vm-card__content">
+              <span class="vm-card__num">01</span>
+              <p>Menjadi <strong>Pemimpin EPC</strong> yang terpercaya dan berdaya saing tinggi di tingkat nasional.</p>
+            </div>
+          </div>
+          <div class="vm-card">
+            <div class="vm-card__icon"><i class="fa-solid fa-users-gear"></i></div>
+            <div class="vm-card__content">
+              <span class="vm-card__num">02</span>
+              <p>Mengembangkan <strong>talenta lokal</strong> di bidang EPC dan O&amp;M dalam industri energi terbarukan.</p>
+            </div>
+          </div>
+          <div class="vm-card">
+            <div class="vm-card__icon"><i class="fa-solid fa-network-wired"></i></div>
+            <div class="vm-card__content">
+              <span class="vm-card__num">03</span>
+              <p>Membangun <strong>hub lokal</strong> untuk perusahaan dari luar wilayah Kalimantan Timur.</p>
+            </div>
+          </div>
+          <div class="vm-card">
+            <div class="vm-card__icon"><i class="fa-solid fa-handshake"></i></div>
+            <div class="vm-card__content">
+              <span class="vm-card__num">04</span>
+              <p>Membangun <strong>komunitas lokal</strong> energi terbarukan yang menghubungkan Pemerintah, Akademisi, dan Industri.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================
+       4. SERVICES SECTION (File Terpisah: sections/services.html | css/services.css)
+  ========================================================= -->
+  <section class="services section section--alt" id="services">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Layanan Kami</span>
+        <h2 class="section-title">Solusi <span class="text-accent">Komprehensif</span></h2>
+        <p class="section-desc">
+          Kami menyediakan layanan EPC end-to-end untuk berbagai kebutuhan energi dan infrastruktur industri.
+        </p>
+      </div>
+
+      <div class="services__grid">
+
+        <div class="service-card">
+          <div class="service-card__icon-wrap service-card__icon-wrap--solar">
+            <i class="fa-solid fa-solar-panel"></i>
+          </div>
+          <h3 class="service-card__title">Solar PV Systems</h3>
+          <p class="service-card__desc">
+            Desain, instalasi, dan komisioning sistem PLTS <em>Off-Grid</em> maupun <em>On-Grid</em>
+            untuk kawasan industri, perkantoran, dan fasilitas terpencil.
+          </p>
+          <ul class="service-card__list">
+            <li><i class="fa-solid fa-check"></i> PLTS Off-Grid &amp; On-Grid</li>
+            <li><i class="fa-solid fa-check"></i> Studi kelayakan &amp; desain sistem</li>
+            <li><i class="fa-solid fa-check"></i> Instalasi &amp; komisioning</li>
+            <li><i class="fa-solid fa-check"></i> Operation &amp; Maintenance (O&amp;M)</li>
+          </ul>
+        </div>
+
+        <div class="service-card service-card--featured">
+          <div class="service-card__badge">Unggulan</div>
+          <div class="service-card__icon-wrap service-card__icon-wrap--civil">
+            <i class="fa-solid fa-building-columns"></i>
+          </div>
+          <h3 class="service-card__title">Civil &amp; Structure EPC</h3>
+          <p class="service-card__desc">
+            Pekerjaan sipil dan struktural skala besar untuk fasilitas industri minyak &amp; gas,
+            energi, dan infrastruktur umum.
+          </p>
+          <ul class="service-card__list">
+            <li><i class="fa-solid fa-check"></i> Cable Trench &amp; Concrete Coating</li>
+            <li><i class="fa-solid fa-check"></i> Concrete Lining</li>
+            <li><i class="fa-solid fa-check"></i> Konstruksi Gedung &amp; Dormitori</li>
+            <li><i class="fa-solid fa-check"></i> Training Center</li>
+          </ul>
+        </div>
+
+        <div class="service-card">
+          <div class="service-card__icon-wrap service-card__icon-wrap--panel">
+            <i class="fa-solid fa-plug-circle-bolt"></i>
+          </div>
+          <h3 class="service-card__title">Panel Maker &amp; Elektrikal</h3>
+          <p class="service-card__desc">
+            Fabrikasi dan suplai panel listrik industri sesuai standar keamanan dan spesifikasi proyek.
+          </p>
+          <ul class="service-card__list">
+            <li><i class="fa-solid fa-check"></i> Panel AC Combiner</li>
+            <li><i class="fa-solid fa-check"></i> Panel Distribution &amp; Control</li>
+            <li><i class="fa-solid fa-check"></i> Suplai Material Elektrikal</li>
+            <li><i class="fa-solid fa-check"></i> Instalasi M&amp;E Equipment</li>
+          </ul>
+        </div>
+
+        <div class="service-card">
+          <div class="service-card__icon-wrap service-card__icon-wrap--power">
+            <i class="fa-solid fa-industry"></i>
+          </div>
+          <h3 class="service-card__title">Power Plant</h3>
+          <p class="service-card__desc">
+            Layanan EPC pembangkit listrik dari tahap rekayasa hingga serah terima operasional.
+          </p>
+          <ul class="service-card__list">
+            <li><i class="fa-solid fa-check"></i> Engineering &amp; Desain</li>
+            <li><i class="fa-solid fa-check"></i> Procurement peralatan</li>
+            <li><i class="fa-solid fa-check"></i> Konstruksi &amp; Komisioning</li>
+            <li><i class="fa-solid fa-check"></i> Handover &amp; O&amp;M Support</li>
+          </ul>
+        </div>
+
+        <div class="service-card">
+          <div class="service-card__icon-wrap service-card__icon-wrap--oilgas">
+            <i class="fa-solid fa-oil-well"></i>
+          </div>
+          <h3 class="service-card__title">Oil &amp; Gas</h3>
+          <p class="service-card__desc">
+            Dukungan teknis dan pengadaan untuk proyek-proyek sektor minyak dan gas bumi
+            di wilayah Kalimantan.
+          </p>
+          <ul class="service-card__list">
+            <li><i class="fa-solid fa-check"></i> Civil Support O&amp;G</li>
+            <li><i class="fa-solid fa-check"></i> M&amp;E Support</li>
+            <li><i class="fa-solid fa-check"></i> Material &amp; General Supply</li>
+            <li><i class="fa-solid fa-check"></i> Project Management</li>
+          </ul>
+        </div>
+
+        <div class="service-card">
+          <div class="service-card__icon-wrap service-card__icon-wrap--supply">
+            <i class="fa-solid fa-boxes-stacked"></i>
+          </div>
+          <h3 class="service-card__title">Material &amp; General Supply</h3>
+          <p class="service-card__desc">
+            Pengadaan material teknik dan umum berkualitas tinggi untuk mendukung kelancaran
+            operasional proyek.
+          </p>
+          <ul class="service-card__list">
+            <li><i class="fa-solid fa-check"></i> Material teknik terspesifikasi</li>
+            <li><i class="fa-solid fa-check"></i> Alat berat &amp; peralatan industri</li>
+            <li><i class="fa-solid fa-check"></i> General supply &amp; logistik</li>
+            <li><i class="fa-solid fa-check"></i> Vendor management</li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================
+       4B. ELECTRICAL SUPPLY SECTION (File Terpisah: sections/supply.html | css/supply.css)
+  ========================================================= -->
+  <!-- =========================================================
+     SECTION: ELECTRICAL SUPPLY (Layanan Pengadaan & Suplai Elektrikal)
+     Data: Compro BEH 2025 | Page 22
+========================================================= -->
+<section class="supply section" id="supply">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-tag">Pengadaan &amp; Suplai Material</span>
+      <h2 class="section-title">Electrical <span class="text-accent">Supply</span></h2>
+      <p class="section-desc">
+        Penyediaan material, aksesoris kabel industri, peralatan isolasi keselamatan (LOTO), dan alat uji kelistrikan berstandar sertifikasi internasional.
+      </p>
+    </div>
+
+    <div class="supply__grid">
+      <!-- 1. Cable Gland, Adapter, Reducer -->
+      <div class="supply-card">
+        <div class="supply-card__img-wrap">
+          <img src="assets/images/supply-cable-gland.png" alt="Cable Gland, Adapter, and Reducer" class="supply-card__img" loading="lazy" />
+          <span class="supply-card__badge">Industrial Grade</span>
+        </div>
+        <div class="supply-card__body">
+          <div class="supply-card__cat"><i class="fa-solid fa-link"></i> Aksesoris Terminasi Kabel</div>
+          <h3 class="supply-card__title">Cable Gland, Adapter &amp; Reducer</h3>
+          <p class="supply-card__desc">
+            Perangkat terminasi kabel kedap air, tahan ledakan (explosion proof/hazardous area), adapter ukuran presisi, dan reducer kuningan/stainless steel untuk instalasi industri berat dan migas.
+          </p>
+          <ul class="supply-card__specs">
+            <li><i class="fa-solid fa-check"></i> Armoured &amp; Non-Armoured Cable Gland</li>
+            <li><i class="fa-solid fa-check"></i> Thread Adapter &amp; Reducer (Metric, NPT, PG)</li>
+            <li><i class="fa-solid fa-check"></i> Material: Brass, Nickel-Plated, SS316</li>
+            <li><i class="fa-solid fa-check"></i> Ingress Protection IP66 / IP68 Sertifikasi ATEX/IECEx</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- 2. Industrial Cables -->
+      <div class="supply-card">
+        <div class="supply-card__img-wrap">
+          <img src="assets/images/supply-cables.png" alt="Industrial and Solar Cables" class="supply-card__img" loading="lazy" />
+          <span class="supply-card__badge">High Performance</span>
+        </div>
+        <div class="supply-card__body">
+          <div class="supply-card__cat"><i class="fa-solid fa-network-wired"></i> Konduktor &amp; Kabel Daya</div>
+          <h3 class="supply-card__title">Power &amp; Solar PV Cable</h3>
+          <p class="supply-card__desc">
+            Kabel daya tegangan rendah hingga menengah (LV/MV), kabel solar khusus photovoltaic tahan radiasi UV ekstrem, kabel kontrol, serta kabel instrumentasi untuk kilang, pembangkit, dan industri manufaktur.
+          </p>
+          <ul class="supply-card__specs">
+            <li><i class="fa-solid fa-check"></i> Solar PV Cable (TÜV 2 Pfg 1169 / EN 50618)</li>
+            <li><i class="fa-solid fa-check"></i> XLPE / PVC Insulated Power Cable (NYY, NYFGBY, N2XY)</li>
+            <li><i class="fa-solid fa-check"></i> Instrumentation &amp; Shielded Control Cable</li>
+            <li><i class="fa-solid fa-check"></i> Flame Retardant &amp; Low Smoke Zero Halogen (LSZH)</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- 3. LOTO (Lockout / Tagout) -->
+      <div class="supply-card">
+        <div class="supply-card__img-wrap">
+          <img src="assets/images/supply-loto.png" alt="LOTO Lockout Tagout Equipment" class="supply-card__img" loading="lazy" />
+          <span class="supply-card__badge">K3 &amp; Safety First</span>
+        </div>
+        <div class="supply-card__body">
+          <div class="supply-card__cat"><i class="fa-solid fa-shield-halved"></i> Keselamatan Kerja Listrik</div>
+          <h3 class="supply-card__title">LOTO (Lockout / Tagout) Equipment</h3>
+          <p class="supply-card__desc">
+            Sistem penguncian dan penandaan keselamatan untuk memastikan energi listrik, mekanik, atau fluida terisolasi total sebelum teknisi melakukan perawatan atau perbaikan (Zero Accident Safety).
+          </p>
+          <ul class="supply-card__specs">
+            <li><i class="fa-solid fa-check"></i> Safety Padlocks (Non-conductive, dielectric body)</li>
+            <li><i class="fa-solid fa-check"></i> Circuit Breaker Lockout (MCB, MCCB, ACB Lockout)</li>
+            <li><i class="fa-solid fa-check"></i> Electrical Plug, Push Button &amp; Switch Covers</li>
+            <li><i class="fa-solid fa-check"></i> Heavy-Duty Danger Tags &amp; Steel Safety Hasps</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- 4. Electrical Testing Tools -->
+      <div class="supply-card">
+        <div class="supply-card__img-wrap">
+          <img src="assets/images/supply-testing-tools.png" alt="Electrical Testing and Measurement Tools" class="supply-card__img" loading="lazy" />
+          <span class="supply-card__badge">Precision Certified</span>
+        </div>
+        <div class="supply-card__body">
+          <div class="supply-card__cat"><i class="fa-solid fa-gauge-high"></i> Instrumen Kalibrasi &amp; Uji</div>
+          <h3 class="supply-card__title">Electrical Testing &amp; Diagnostic Tools</h3>
+          <p class="supply-card__desc">
+            Peralatan uji dan instrumen ukur kelistrikan berakurasi tinggi untuk pengujian komisioning, audit energi, inspeksi resistansi isolasi, pemeliharaan sistem proteksi petir, dan panel surya.
+          </p>
+          <ul class="supply-card__specs">
+            <li><i class="fa-solid fa-check"></i> Insulation Resistance Tester (Megger 1kV - 10kV)</li>
+            <li><i class="fa-solid fa-check"></i> Digital Earth Ground Resistance Tester</li>
+            <li><i class="fa-solid fa-check"></i> Clamp Meter TRMS &amp; Industrial Multimeter</li>
+            <li><i class="fa-solid fa-check"></i> Solar PV Tester &amp; I-V Curve Tracer</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- Supply Banner CTA / Sister Company Alignment -->
+    <div class="supply__cta-banner">
+      <div class="supply__cta-content">
+        <i class="fa-solid fa-boxes-packing supply__cta-icon"></i>
+        <div>
+          <h4>Kebutuhan Pengadaan Khusus atau Tender EPC?</h4>
+          <p>Tim pengadaan material kami siap melayani suplai part kelistrikan bersertifikasi lengkap dengan garansi resmi dan pengiriman tepat waktu.</p>
+        </div>
+      </div>
+      <a href="#contact" class="btn btn--primary">
+        <i class="fa-solid fa-file-invoice"></i> Minta Penawaran Suplai
+      </a>
+    </div>
+
+  </div>
+</section>
+
+  <!-- =========================================================
+       5. PROJECTS SECTION (File Terpisah: sections/projects.html | css/projects.css | js/filter.js)
+  ========================================================= -->
+  <!-- =========================================================
+     SECTION: PROJECTS (Portofolio Proyek & Filter Tab)
+     Data: Compro BEH 2025 | 23 Proyek | 2017-2025
+========================================================= -->
+<section class="projects section" id="projects">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-tag">Portofolio Proyek</span>
+      <h2 class="section-title">Rekam Jejak <span class="text-accent">Kami</span></h2>
+      <p class="section-desc">
+        Sejumlah proyek strategis yang telah berhasil kami selesaikan bersama mitra industri terkemuka di Indonesia.
+      </p>
+    </div>
+
+    <!-- Filter Tabs -->
+    <div class="project-filter" id="projectFilter">
+      <button class="filter-btn active" data-filter="all">Semua</button>
+      <button class="filter-btn" data-filter="solar">Solar PV</button>
+      <button class="filter-btn" data-filter="civil">Civil</button>
+      <button class="filter-btn" data-filter="electrical">Elektrikal</button>
+      <button class="filter-btn" data-filter="om">O&amp;M</button>
+      <button class="filter-btn" data-filter="residential">Residensial</button>
+    </div>
+
+    <div class="projects__grid" id="projectGrid">
+
+      <!-- ===== SOLAR PV PROJECTS ===== -->
+
+      <!-- 1. ENI Muara Bakau -->
+      <div class="project-card" data-category="solar">
+        <div class="project-card__header project-card__header--solar">
+          <i class="fa-solid fa-solar-panel"></i>
+          <span class="project-card__year">2021</span>
+          <span class="project-card__cat">Solar PV</span>
+        </div>
+        <div class="project-card__body">
+          <div class="project-card__client-wrap">
+            <img src="assets/images/eni.png" alt="ENI Logo" class="project-card__client-logo" />
+            <span class="project-card__client">ENI Muara Bakau BV</span>
+          </div>
+          <h3 class="project-card__title">PLTS Off-Grid — ENI Project</h3>
+          <p class="project-card__desc">
+            Sistem PLTS off-grid 30 kWp + baterai 216 kWh untuk operasional fasilitas ENI Muara Bakau di Kalimantan.
+          </p>
+          <div class="project-card__tags">
+            <span>Off-Grid</span><span>30 kWp</span><span>EPC</span><span>Kalimantan</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- 2. YIMM (Yamaha) Phase 1 -->
+      <div class="project-card" data-category="solar">
+        <div class="project-card__header project-card__header--solar">
+          <i class="fa-solid fa-solar-panel"></i>
+          <span class="project-card__year">Phase 1</span>
+          <span class="project-card__cat">Solar PV</span>
+        </div>
+        <div class="project-card__body">
+          <div class="project-card__client-wrap">
+            <img src="assets/images/yamaha.jpg" alt="Yamaha Logo" class="project-card__client-logo" />
+            <span class="project-card__client">YIMM (Yamaha)</span>
+          </div>
+          <h3 class="project-card__title">PLTS On-Grid — YIMM HO Phase 1</h3>
+          <p class="project-card__desc">
+            Instalasi PLTS on-grid fase pertama untuk pabrik YIMM (Yamaha Indonesia Motor Manufacturing) di Pulo Gadung, Jakarta Timur.
+          </p>
+          <div class="project-card__tags">
+            <span>On-Grid</span><span>988,35 kWp</span><span>Jakarta Timur</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- 3. YIMM (Yamaha) Phase 2 -->
+      <div class="project-card" data-category="solar">
+        <div class="project-card__header project-card__header--solar">
+          <i class="fa-solid fa-solar-panel"></i>
+          <span class="project-card__year">Phase 2</span>
+          <span class="project-card__cat">Solar PV</span>
+        </div>
+        <div class="project-card__body">
+          <div class="project-card__client-wrap">
+            <img src="assets/images/yamaha.jpg" alt="Yamaha Logo" class="project-card__client-logo" />
+            <span class="project-card__client">YIMM (Yamaha)</span>
+          </div>
+          <h3 class="project-card__title">PLTS On-Grid — YIMM HO Phase 2</h3>
+          <p class="project-card__desc">
+            Ekspansi PLTS on-grid fase kedua di fasilitas YIMM Pulo Gadung, Jakarta Timur dengan kapasitas lebih besar.
+          </p>
+          <div class="project-card__tags">
+            <span>On-Grid</span><span>1,2 MWp</span><span>Jakarta Timur</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- 4. IDEC AWI Phase 1 -->
+      <div class="project-card" data-category="solar">
+        <div class="project-card__header project-card__header--solar">
+          <i class="fa-solid fa-solar-panel"></i>
+          <span class="project-card__year">Phase 1</span>
+          <span class="project-card__cat">Solar PV</span>
+        </div>
+        <div class="project-card__body">
+          <div class="project-card__client-wrap">
+            <img src="assets/images/IDEC WOOD.jpg" alt="IDEC Logo" class="project-card__client-logo" />
+            <span class="project-card__client">IDEC AWI</span>
+          </div>
+          <h3 class="project-card__title">PLTS On-Grid — IDEC AWI Phase 1</h3>
+          <p class="project-card__desc">
+            Instalasi PLTS on-grid fase pertama untuk fasilitas IDEC AWI di Tarakan, Kalimantan Utara.
+          </p>
+          <div class="project-card__tags">
+            <span>On-Grid</span><span>579,15 kWp</span><span>Tarakan, Kaltara</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- 5. IDEC AWI Phase 2 -->
+      <div class="project-card" data-category="solar">
+        <div class="project-card__header project-card__header--solar">
+          <i class="fa-solid fa-solar-panel"></i>
+          <span class="project-card__year">Phase 2</span>
+          <span class="project-card__cat">Solar PV</span>
+        </div>
+        <div class="project-card__body">
+          <div class="project-card__client-wrap">
+            <img src="assets/images/IDEC WOOD.jpg" alt="IDEC Logo" class="project-card__client-logo" />
+            <span class="project-card__client">IDEC AWI</span>
+          </div>
+          <h3 class="project-card__title">PLTS On-Grid — IDEC AWI Phase 2</h3>
+          <p class="project-card__desc">
+            Ekspansi PLTS on-grid fase kedua untuk fasilitas IDEC AWI di Tarakan, Kalimantan Utara.
+          </p>
+          <div class="project-card__tags">
+            <span>On-Grid</span><span>395 kWp</span><span>Tarakan, Kaltara</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- 6. CLEO (PT Sariguna Primatirta) -->
+      <div class="project-card" data-category="solar">
+        <div class="project-card__header project-card__header--solar">
+          <i class="fa-solid fa-solar-panel"></i>
+          <span class="project-card__year">2022</span>
+          <span class="project-card__cat">Solar PV</span>
+        </div>
+        <div class="project-card__body">
+          <div class="project-card__client-wrap">
+            <img src="assets/images/cleo.jpg" alt="CLEO Logo" class="project-card__client-logo" />
+            <span class="project-card__client">CLEO (Sariguna Primatirta)</span>
+          </div>
+          <h3 class="project-card__title">PLTS On-Grid — CLEO Project</h3>
+          <p class="project-card__desc">
+            Instalasi PLTS on-grid untuk PT Sariguna Primatirta Tbk (CLEO) di Bati-Bati, Kalimantan Selatan.
+          </p>
+          <div class="project-card__tags">
+            <span>On-Grid</span><span>184,8 kWp</span><span>Kalsel, Bati-Bati</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- 7. PLN Indonesia Power Tanjung Priok -->
+      <div class="project-card" data-category="solar">
+        <div class="project-card__header project-card__header--solar">
+          <i class="fa-solid fa-solar-panel"></i>
+          <span class="project-card__year">2022</span>
+          <span class="project-card__cat">Solar PV</span>
+        </div>
+        <div class="project-card__body">
+          <div class="project-card__client-wrap">
+            <img src="assets/images/pln indonesia power priok.jpg" alt="PLN Indonesia Power Logo" class="project-card__client-logo" />
+            <span class="project-card__client">PLN Indonesia Power</span>
+          </div>
+          <h3 class="project-card__title">PLTS On-Grid — PLN Tj. Priok</h3>
+          <p class="project-card__desc">
+            Instalasi PLTS on-grid untuk PLN Indonesia Power UPJP Tanjung Priok di Jakarta Utara.
+          </p>
+          <div class="project-card__tags">
+            <span>On-Grid</span><span>25 kWp</span><span>Jakarta Utara</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- 8. Thiess Project -->
+      <div class="project-card" data-category="solar">
+        <div class="project-card__header project-card__header--solar">
+          <i class="fa-solid fa-solar-panel"></i>
+          <span class="project-card__year">2023</span>
+          <span class="project-card__cat">Solar PV</span>
+        </div>
+        <div class="project-card__body">
+          <div class="project-card__client-wrap">
+            <img src="assets/images/thiess.jpg" alt="Thiess Logo" class="project-card__client-logo" />
+            <span class="project-card__client">Thiess</span>
+          </div>
+          <h3 class="project-card__title">PLTS On-Grid — Thiess Project</h3>
+          <p class="project-card__desc">
+            Instalasi PLTS on-grid untuk mendukung operasional Thiess di wilayah Balikpapan, Kalimantan Timur.
+          </p>
+          <div class="project-card__tags">
+            <span>On-Grid</span><span>110 kWp</span><span>Balikpapan, Kaltim</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- 9. Merck Project (Ongoing) -->
+      <div class="project-card" data-category="solar">
+        <div class="project-card__header project-card__header--solar project-card__header--ongoing">
+          <i class="fa-solid fa-solar-panel"></i>
+          <span class="project-card__year">Ongoing</span>
+          <span class="project-card__cat">Solar PV</span>
+        </div>
+        <div class="project-card__body">
+          <div class="project-card__client-wrap">
+            <img src="assets/images/merck.png" alt="Merck Logo" class="project-card__client-logo" />
+            <span class="project-card__client">Merck</span>
+          </div>
+          <h3 class="project-card__title">PLTS On-Grid — Merck Project</h3>
+          <p class="project-card__desc">
+            Proyek PLTS on-grid sedang berjalan untuk fasilitas Merck di Pasar Rebo, Jakarta Timur.
+          </p>
+          <div class="project-card__tags">
+            <span>On-Grid</span><span>473,86 kWp</span><span>Pasar Rebo, Jakarta</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- 10. KIIC Kawasan Industri West Java -->
+      <div class="project-card" data-category="solar">
+        <div class="project-card__header project-card__header--solar">
+          <i class="fa-solid fa-solar-panel"></i>
+          <span class="project-card__year">2023</span>
+          <span class="project-card__cat">Solar PV</span>
+        </div>
+        <div class="project-card__body">
+          <div class="project-card__client-wrap">
+            <span class="project-card__client">KIIC Industrial Estate</span>
+          </div>
+          <h3 class="project-card__title">PLTS On-Grid — KIIC West Java</h3>
+          <p class="project-card__desc">
+            Instalasi PLTS on-grid skala besar untuk kawasan industri KIIC (Karawang International Industrial City) di Jawa Barat.
+          </p>
+          <div class="project-card__tags">
+            <span>On-Grid</span><span>900 kWp</span><span>Karawang, Jabar</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- 11. Perusda Kaltim -->
+      <div class="project-card" data-category="solar">
+        <div class="project-card__header project-card__header--solar">
+          <i class="fa-solid fa-solar-panel"></i>
+          <span class="project-card__year">2023</span>
+          <span class="project-card__cat">Solar PV</span>
+        </div>
+        <div class="project-card__body">
+          <div class="project-card__client-wrap">
+            <span class="project-card__client">Perusda Kaltim</span>
+          </div>
+          <h3 class="project-card__title">PLTS On-Grid — Perusda Kaltim</h3>
+          <p class="project-card__desc">
+            Instalasi PLTS on-grid untuk Perusahaan Daerah (Perusda) Kalimantan Timur di Samarinda.
+          </p>
+          <div class="project-card__tags">
+            <span>On-Grid</span><span>365 kWp</span><span>Samarinda, Kaltim</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- 12. RDMP Balikpapan Solar -->
+      <div class="project-card" data-category="solar">
+        <div class="project-card__header project-card__header--solar">
+          <i class="fa-solid fa-solar-panel"></i>
+          <span class="project-card__year">2023</span>
+          <span class="project-card__cat">Solar PV</span>
+        </div>
+        <div class="project-card__body">
+          <div class="project-card__client-wrap">
+            <img src="assets/images/rdmp-balikpapan-jo.jpg" alt="RDMP Balikpapan Logo" class="project-card__client-logo" />
+            <span class="project-card__client">RDMP Balikpapan</span>
+          </div>
+          <h3 class="project-card__title">PLTS On-Grid — RDMP Project</h3>
+          <p class="project-card__desc">
+            Instalasi PLTS on-grid untuk mendukung kebutuhan energi fasilitas RDMP (Refinery Development Master Plan) Balikpapan.
+          </p>
+          <div class="project-card__tags">
+            <span>On-Grid</span><span>100 kWp</span><span>Balikpapan, Kaltim</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- 13. Peruri Karawang -->
+      <div class="project-card" data-category="solar">
+        <div class="project-card__header project-card__header--solar">
+          <i class="fa-solid fa-solar-panel"></i>
+          <span class="project-card__year">2023</span>
+          <span class="project-card__cat">Solar PV</span>
+        </div>
+        <div class="project-card__body">
+          <div class="project-card__client-wrap">
+            <img src="assets/images/peruri.png" alt="Peruri Logo" class="project-card__client-logo" />
+            <span class="project-card__client">Peruri Karawang</span>
+          </div>
+          <h3 class="project-card__title">PLTS On-Grid — Peruri Karawang</h3>
+          <p class="project-card__desc">
+            Instalasi PLTS on-grid di fasilitas Peruri (Percetakan Uang Republik Indonesia) Karawang, Jawa Barat.
+          </p>
+          <div class="project-card__tags">
+            <span>On-Grid</span><span>20 kWp</span><span>Karawang, Jabar</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- 14. CV Harum Mekar (Ongoing) -->
+      <div class="project-card" data-category="solar">
+        <div class="project-card__header project-card__header--solar project-card__header--ongoing">
+          <i class="fa-solid fa-solar-panel"></i>
+          <span class="project-card__year">2025</span>
+          <span class="project-card__cat">Solar PV</span>
+        </div>
+        <div class="project-card__body">
+          <div class="project-card__client-wrap">
+            <span class="project-card__client">CV Harum Mekar</span>
+          </div>
+          <h3 class="project-card__title">PLTS On-Grid — CV Harum Mekar</h3>
+          <p class="project-card__desc">
+            Proyek PLTS on-grid skala besar yang sedang berjalan untuk CV Harum Mekar di Pati, Jawa Tengah.
+          </p>
+          <div class="project-card__tags">
+            <span>On-Grid</span><span>736,77 kWp</span><span>Pati, Jawa Tengah</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- ===== O&M PROJECT ===== -->
+
+      <!-- 15. O&M 2025 -->
+      <div class="project-card" data-category="om">
+        <div class="project-card__header project-card__header--om">
+          <i class="fa-solid fa-wrench"></i>
+          <span class="project-card__year">2025</span>
+          <span class="project-card__cat">O&amp;M</span>
+        </div>
+        <div class="project-card__body">
+          <div class="project-card__client-wrap">
+            <span class="project-card__client">Multi-Site</span>
+          </div>
+          <h3 class="project-card__title">Operation &amp; Maintenance — Kaltim &amp; Sulawesi</h3>
+          <p class="project-card__desc">
+            Layanan Operation &amp; Maintenance (O&amp;M) untuk total aset 3,8 MWp PLTS yang tersebar di area Kalimantan Timur dan Sulawesi.
+          </p>
+          <div class="project-card__tags">
+            <span>O&amp;M</span><span>3,8 MWp</span><span>Kaltim &amp; Sulawesi</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- ===== RESIDENTIAL PROJECT ===== -->
+
+      <!-- 16. Residential 2017-2024 -->
+      <div class="project-card" data-category="residential">
+        <div class="project-card__header project-card__header--residential">
+          <i class="fa-solid fa-house-chimney"></i>
+          <span class="project-card__year">2017–2024</span>
+          <span class="project-card__cat">Residensial</span>
+        </div>
+        <div class="project-card__body">
+          <div class="project-card__client-wrap">
+            <span class="project-card__client">Residential Project</span>
+          </div>
+          <h3 class="project-card__title">PLTS Residensial — Kaltim &amp; Jakarta</h3>
+          <p class="project-card__desc">
+            Pemasangan PLTS atap untuk perumahan dan properti residensial di wilayah Kalimantan Timur dan Jakarta selama periode 2017–2024.
+          </p>
+          <div class="project-card__tags">
+            <span>Residensial</span><span>Rooftop</span><span>Kaltim &amp; Jakarta</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- ===== CIVIL PROJECTS ===== -->
+
+      <!-- 17. Kutai Refinery Nusantara 2021 -->
+      <div class="project-card" data-category="civil">
+        <div class="project-card__header project-card__header--civil">
+          <i class="fa-solid fa-hard-hat"></i>
+          <span class="project-card__year">2021</span>
+          <span class="project-card__cat">Civil</span>
+        </div>
+        <div class="project-card__body">
+          <div class="project-card__client-wrap">
+            <img src="assets/images/pt-kutai-refinery-nusantara.jpg" alt="Kutai Refinery Nusantara Logo" class="project-card__client-logo" />
+            <span class="project-card__client">Kutai Refinery Nusantara</span>
+          </div>
+          <h3 class="project-card__title">Cable Pulling &amp; Pipe Rack — KRN 2021</h3>
+          <p class="project-card__desc">
+            Pekerjaan Cable Pulling dan Pipe Rack Project untuk fasilitas Kutai Refinery Nusantara, Kalimantan Timur.
+          </p>
+          <div class="project-card__tags">
+            <span>Cable Pulling</span><span>Pipe Rack</span><span>Kaltim</span><span>2021</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- 18. RDMP Street Concrete & Asphalt 2022 -->
+      <div class="project-card" data-category="civil">
+        <div class="project-card__header project-card__header--civil">
+          <i class="fa-solid fa-hard-hat"></i>
+          <span class="project-card__year">2022</span>
+          <span class="project-card__cat">Civil</span>
+        </div>
+        <div class="project-card__body">
+          <div class="project-card__client-wrap">
+            <img src="assets/images/rdmp-balikpapan-jo.jpg" alt="RDMP Balikpapan Logo" class="project-card__client-logo" />
+            <span class="project-card__client">RDMP Balikpapan JO</span>
+          </div>
+          <h3 class="project-card__title">Street Concrete &amp; Asphalt — RDMP 2022</h3>
+          <p class="project-card__desc">
+            Pekerjaan pengecoran jalan (street concrete) dan pengaspalan (asphalt project) di area RDMP Balikpapan.
+          </p>
+          <div class="project-card__tags">
+            <span>Concrete</span><span>Asphalt</span><span>RDMP</span><span>Balikpapan</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- 19. RDMP Drainase & PJUTS 2022 -->
+      <div class="project-card" data-category="civil">
+        <div class="project-card__header project-card__header--civil">
+          <i class="fa-solid fa-hard-hat"></i>
+          <span class="project-card__year">2022</span>
+          <span class="project-card__cat">Civil</span>
+        </div>
+        <div class="project-card__body">
+          <div class="project-card__client-wrap">
+            <img src="assets/images/rdmp-balikpapan-jo.jpg" alt="RDMP Balikpapan Logo" class="project-card__client-logo" />
+            <span class="project-card__client">RDMP Balikpapan JO</span>
+          </div>
+          <h3 class="project-card__title">Drainase &amp; PJUTS — RDMP 2022</h3>
+          <p class="project-card__desc">
+            Pekerjaan drainase area RDMP Balikpapan dan Penerangan Jalan Umum Tenaga Surya (PJUTS) di Km. 23 Gifta Garden — total 31 titik 100 Wp PJUTS.
+          </p>
+          <div class="project-card__tags">
+            <span>Drainase</span><span>PJUTS</span><span>31 Titik</span><span>Balikpapan</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- 20. L&D Training Center & Dormitory 2022-2023 -->
+      <div class="project-card" data-category="civil">
+        <div class="project-card__header project-card__header--civil">
+          <i class="fa-solid fa-hard-hat"></i>
+          <span class="project-card__year">2022–2023</span>
+          <span class="project-card__cat">Civil</span>
+        </div>
+        <div class="project-card__body">
+          <div class="project-card__client-wrap">
+            <span class="project-card__client">Sesayap, Kalimantan Utara</span>
+          </div>
+          <h3 class="project-card__title">L&amp;D Training Center &amp; Dormitory</h3>
+          <p class="project-card__desc">
+            Konstruksi gedung Learning &amp; Development Training Center beserta fasilitas Dormitory di Sesayap, Kalimantan Utara.
+          </p>
+          <div class="project-card__tags">
+            <span>Konstruksi</span><span>Gedung</span><span>Kaltara</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- 21. RDMP Cable Trench 2023-2024 -->
+      <div class="project-card" data-category="civil">
+        <div class="project-card__header project-card__header--civil">
+          <i class="fa-solid fa-hard-hat"></i>
+          <span class="project-card__year">2023–2024</span>
+          <span class="project-card__cat">Civil</span>
+        </div>
+        <div class="project-card__body">
+          <div class="project-card__client-wrap">
+            <img src="assets/images/rdmp-balikpapan-jo.jpg" alt="RDMP Balikpapan Logo" class="project-card__client-logo" />
+            <span class="project-card__client">RDMP Balikpapan JO</span>
+          </div>
+          <h3 class="project-card__title">Excavation Cable Trench — RDMP</h3>
+          <p class="project-card__desc">
+            Pekerjaan penggalian Cable Trench untuk Interconnect Piperack di area RDMP Balikpapan, Kalimantan Timur.
+          </p>
+          <div class="project-card__tags">
+            <span>Cable Trench</span><span>Excavation</span><span>RDMP</span><span>Balikpapan</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- 22. RDMP Concrete Coating & Lining 2023-2025 -->
+      <div class="project-card" data-category="civil">
+        <div class="project-card__header project-card__header--civil">
+          <i class="fa-solid fa-hard-hat"></i>
+          <span class="project-card__year">2023–2025</span>
+          <span class="project-card__cat">Civil</span>
+        </div>
+        <div class="project-card__body">
+          <div class="project-card__client-wrap">
+            <img src="assets/images/rdmp-balikpapan-jo.jpg" alt="RDMP Balikpapan Logo" class="project-card__client-logo" />
+            <span class="project-card__client">RDMP Balikpapan JO</span>
+          </div>
+          <h3 class="project-card__title">Concrete Coating &amp; Lining — RDMP</h3>
+          <p class="project-card__desc">
+            Pekerjaan Concrete Coating dengan material Fosroc EN901 (hingga 500 mikron) dan Concrete Lining dengan Steuler Alkadur HR &amp; acid brick untuk proteksi cairan korosif suhu tinggi.
+          </p>
+          <div class="project-card__tags">
+            <span>Concrete Coating</span><span>Concrete Lining</span><span>Epoxy</span><span>Balikpapan</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- ===== ELECTRICAL PROJECTS ===== -->
+
+      <!-- 23. Panel Maker & Electrical Supply -->
+      <div class="project-card" data-category="electrical">
+        <div class="project-card__header project-card__header--electrical">
+          <i class="fa-solid fa-plug-circle-bolt"></i>
+          <span class="project-card__year">2021–2025</span>
+          <span class="project-card__cat">Elektrikal</span>
+        </div>
+        <div class="project-card__body">
+          <div class="project-card__client-wrap">
+            <span class="project-card__client">Multi-Project</span>
+          </div>
+          <h3 class="project-card__title">Panel Maker &amp; Electrical Supply</h3>
+          <p class="project-card__desc">
+            Fabrikasi Panel Distribution, Panel Control, dan AC Combiner serta penyediaan perlengkapan elektrikal (Cable Gland, Adapter, Reducer, LOTO, dan Electrical Testing Tools) untuk berbagai proyek industri.
+          </p>
+          <div class="project-card__tags">
+            <span>Panel Maker</span><span>Distribution</span><span>Control</span><span>Supply</span>
+          </div>
+        </div>
+      </div>
+
+    </div><!-- /.projects__grid -->
+
+    <!-- Map Sebaran Proyek Indonesia -->
+    <div class="projects__map-container">
+      <div class="projects__map-header">
+        <div class="projects__map-badge">
+          <i class="fa-solid fa-map-location-dot"></i> Jangkauan Nasional
+        </div>
+        <h3 class="projects__map-title">Peta Sebaran Proyek di Indonesia</h3>
+        <p class="projects__map-desc">
+          Rekam jejak instalasi EPC Solar PV, pekerjaan sipil industri, dan manajemen operasional pemeliharaan energi terbarukan yang tersebar di wilayah Kalimantan Timur, Kalimantan Utara, Kalimantan Selatan, Kalimantan Barat, Jawa Barat, DKI Jakarta, Jawa Tengah, hingga Sulawesi.
+        </p>
+      </div>
+
+      <div class="projects__map-wrapper">
+        <img src="assets/images/map-sebaran-proyek.png" alt="Peta Sebaran Proyek Borneo Energy Harapan di Indonesia" class="projects__map-img" loading="lazy" />
+      </div>
+
+      <!-- Regional Highlights Bar -->
+      <div class="projects__map-regions">
+        <div class="map-region-item">
+          <div class="map-region-item__icon"><i class="fa-solid fa-location-dot"></i></div>
+          <div class="map-region-item__content">
+            <strong>Kalimantan Timur (Hub Utama)</strong>
+            <span>Balikpapan, Samarinda, Muara Bakau, RDMP Refinery</span>
+          </div>
+        </div>
+        <div class="map-region-item">
+          <div class="map-region-item__icon"><i class="fa-solid fa-location-dot"></i></div>
+          <div class="map-region-item__content">
+            <strong>Kalimantan Utara &amp; Selatan</strong>
+            <span>Tarakan (IDEC AWI 1 &amp; 2), Bati-Bati (CLEO), Sesayap</span>
+          </div>
+        </div>
+        <div class="map-region-item">
+          <div class="map-region-item__icon"><i class="fa-solid fa-location-dot"></i></div>
+          <div class="map-region-item__content">
+            <strong>Pulau Jawa</strong>
+            <span>DKI Jakarta (YIMM, Priok, Merck), Karawang (KIIC, Peruri), Pati</span>
+          </div>
+        </div>
+        <div class="map-region-item">
+          <div class="map-region-item__icon"><i class="fa-solid fa-location-dot"></i></div>
+          <div class="map-region-item__content">
+            <strong>Area Sulawesi &amp; Regional</strong>
+            <span>Kontrak Operation &amp; Maintenance (O&amp;M) Total 3,8 MWp</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+  <!-- =========================================================
+       5B. OUR TEAM SECTION (File Terpisah: sections/team.html | css/team.css)
+  ========================================================= -->
+  <!-- =========================================================
+     SECTION: OUR TEAM (Struktur Organisasi & Tim Ahli)
+     Data: Compro BEH 2025 | Page 4
+========================================================= -->
+<section class="team section section--alt" id="team">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-tag">Struktur Organisasi</span>
+      <h2 class="section-title">Tim Profesional <span class="text-accent">Kami</span></h2>
+      <p class="section-desc">
+        Didukung oleh para profesional berpengalaman dan insinyur berdedikasi tinggi di bidang EPC dan energi terbarukan.
+      </p>
+    </div>
+
+    <!-- Leadership Row (C-Level & Direksi) -->
+    <div class="team__leadership">
+      <div class="team-card team-card--lead">
+        <div class="team-card__avatar">
+          <i class="fa-solid fa-user-tie"></i>
+        </div>
+        <div class="team-card__role">Chief Executive Officer</div>
+        <h3 class="team-card__name">Rizal Fernandy, S.T., M.MT.</h3>
+        <p class="team-card__desc">Memimpin visi strategis, ekspansi bisnis, dan keunggulan operasional Borneo Energy Harapan.</p>
+      </div>
+
+      <div class="team-card team-card--lead">
+        <div class="team-card__avatar">
+          <i class="fa-solid fa-user-gear"></i>
+        </div>
+        <div class="team-card__role">Director</div>
+        <h3 class="team-card__name">Abrar Abdul Malik</h3>
+        <p class="team-card__desc">Mengarahkan tata kelola operasional proyek, kemitraan strategis, dan eksekusi EPC.</p>
+      </div>
+    </div>
+
+    <!-- Operational & Corporate Support Grid -->
+    <div class="team__dept-heading">
+      <span class="team__dept-badge"><i class="fa-solid fa-building"></i> Manajemen Operasional &amp; Dukungan Korporat</span>
+    </div>
+    <div class="team__grid team__grid--support">
+      <div class="team-card">
+        <div class="team-card__icon"><i class="fa-solid fa-calculator"></i></div>
+        <div class="team-card__dept">Secretary / Finance &amp; Tax</div>
+        <h4 class="team-card__member">Nabila Intan Alya Kamila</h4>
+        <span class="team-card__tag">Tata Kelola Keuangan &amp; Perpajakan</span>
+      </div>
+
+      <div class="team-card">
+        <div class="team-card__icon"><i class="fa-solid fa-scale-balanced"></i></div>
+        <div class="team-card__dept">HR &amp; Legal</div>
+        <h4 class="team-card__member">Clara Suci V.</h4>
+        <span class="team-card__tag">Legalitas &amp; Pengembangan SDM</span>
+      </div>
+
+      <div class="team-card">
+        <div class="team-card__icon"><i class="fa-solid fa-bullhorn"></i></div>
+        <div class="team-card__dept">Public Relations</div>
+        <h4 class="team-card__member">Amir Dawi</h4>
+        <span class="team-card__tag">Hubungan Masyarakat &amp; Kemitraan</span>
+      </div>
+
+      <div class="team-card">
+        <div class="team-card__icon"><i class="fa-solid fa-cart-shopping"></i></div>
+        <div class="team-card__dept">Procurement</div>
+        <h4 class="team-card__member">Dhea Syafitra</h4>
+        <span class="team-card__tag">Pengadaan &amp; Rantai Pasok Material</span>
+      </div>
+
+      <div class="team-card">
+        <div class="team-card__icon"><i class="fa-solid fa-briefcase"></i></div>
+        <div class="team-card__dept">General Affairs</div>
+        <h4 class="team-card__member">Nurul Rizky Ariani</h4>
+        <span class="team-card__tag">Manajemen Fasilitas &amp; Administrasi Umum</span>
+      </div>
+    </div>
+
+    <!-- Engineering & Technical Specialists -->
+    <div class="team__dept-heading">
+      <span class="team__dept-badge team__dept-badge--eng"><i class="fa-solid fa-helmet-safety"></i> Tim Rekayasa &amp; Teknik (Engineering Team)</span>
+    </div>
+    <div class="team__grid team__grid--eng">
+      <div class="team-card team-card--engineer">
+        <div class="team-card__icon team-card__icon--eng"><i class="fa-solid fa-compass-drafting"></i></div>
+        <h4 class="team-card__member">Thomas Dwi Putra S., S.T.</h4>
+        <div class="team-card__title">Project &amp; System Engineer</div>
+        <span class="team-card__tag">Desain Sistem &amp; Rekayasa EPC</span>
+      </div>
+
+      <div class="team-card team-card--engineer">
+        <div class="team-card__icon team-card__icon--eng"><i class="fa-solid fa-bolt"></i></div>
+        <h4 class="team-card__member">Muhammad Anzan, S.T.</h4>
+        <div class="team-card__title">Electrical Engineer</div>
+        <span class="team-card__tag">Sistem PLTS &amp; Integrasi Elektrikal</span>
+      </div>
+
+      <div class="team-card team-card--engineer">
+        <div class="team-card__icon team-card__icon--eng"><i class="fa-solid fa-hard-hat"></i></div>
+        <h4 class="team-card__member">Muchammad Chilmi, S.T.</h4>
+        <div class="team-card__title">Civil &amp; Structural Engineer</div>
+        <span class="team-card__tag">Struktur Panel &amp; Infrastruktur Sipil</span>
+      </div>
+
+      <div class="team-card team-card--engineer">
+        <div class="team-card__icon team-card__icon--eng"><i class="fa-solid fa-network-wired"></i></div>
+        <h4 class="team-card__member">Anjas Nur Aslam, S.T.</h4>
+        <div class="team-card__title">Site &amp; Quality Engineer</div>
+        <span class="team-card__tag">Pengawasan Lapangan &amp; QA/QC</span>
+      </div>
+
+      <div class="team-card team-card--engineer">
+        <div class="team-card__icon team-card__icon--eng"><i class="fa-solid fa-wrench"></i></div>
+        <h4 class="team-card__member">Arie Indra, S.T.</h4>
+        <div class="team-card__title">Commissioning &amp; O&amp;M Engineer</div>
+        <span class="team-card__tag">Pengujian, Komisioning &amp; Maintenance</span>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+  <!-- =========================================================
+       6. CERTIFICATION & PARTNERS (File Terpisah: sections/certifications.html | css/certifications.css)
+  ========================================================= -->
+  <section class="cert section section--alt" id="cert">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Sertifikasi &amp; Legalitas</span>
+        <h2 class="section-title">Standar <span class="text-accent">Profesional</span></h2>
+        <p class="section-desc">
+          BEH beroperasi dengan dukungan dokumen legalitas dan sertifikasi yang lengkap
+          untuk menjamin kualitas dan kepatuhan hukum.
+        </p>
+      </div>
+
+      <div class="cert__grid">
+        <div class="cert-card">
+          <div class="cert-card__icon"><i class="fa-solid fa-file-contract"></i></div>
+          <h4>Akta Pendirian</h4>
+          <p>Legalitas pendirian perusahaan yang sah sesuai hukum Republik Indonesia.</p>
+        </div>
+        <div class="cert-card">
+          <div class="cert-card__icon"><i class="fa-solid fa-id-card"></i></div>
+          <h4>NIB &amp; NPWP</h4>
+          <p>Nomor Induk Berusaha dan NPWP aktif sebagai dasar kepatuhan perpajakan dan perizinan.</p>
+        </div>
+        <div class="cert-card">
+          <div class="cert-card__icon"><i class="fa-solid fa-shield-halved"></i></div>
+          <h4>SIUP &amp; TDP</h4>
+          <p>Surat Izin Usaha Perdagangan dan Tanda Daftar Perusahaan resmi.</p>
+        </div>
+        <div class="cert-card">
+          <div class="cert-card__icon"><i class="fa-solid fa-award"></i></div>
+          <h4>SBU (Jasa Konstruksi)</h4>
+          <p>Sertifikat Badan Usaha untuk layanan jasa konstruksi dan EPC.</p>
+        </div>
+        <div class="cert-card">
+          <div class="cert-card__icon"><i class="fa-solid fa-hard-hat"></i></div>
+          <h4>K3 &amp; HSE Compliance</h4>
+          <p>Komitmen terhadap standar Kesehatan, Keselamatan, Kerja, dan Lingkungan Hidup.</p>
+        </div>
+        <div class="cert-card">
+          <div class="cert-card__icon"><i class="fa-solid fa-solar-panel"></i></div>
+          <h4>Sertifikasi Renewable Energy</h4>
+          <p>Kompetensi dan sertifikasi khusus di bidang energi terbarukan dan sistem PLTS.</p>
+        </div>
+      </div>
+
+      <!-- Sub-Bagian: Man Power Qualification & Kompetensi Tim -->
+      <div class="manpower__wrapper">
+        <div class="manpower__header">
+          <span class="manpower__badge"><i class="fa-solid fa-user-check"></i> Standardisasi Keahlian</span>
+          <h3 class="manpower__title">Kualifikasi Tenaga Ahli (Man Power Qualification)</h3>
+          <p class="manpower__desc">
+            Seluruh personel teknis dan rekayasa BEH memegang sertifikasi kompetensi nasional dan lisensi resmi untuk menjamin keselamatan kerja, akurasi kalkulasi engineering, dan kepatuhan standar industri.
+          </p>
+        </div>
+
+        <div class="manpower__grid">
+          <div class="manpower-card">
+            <div class="manpower-card__badge">BNSP / KEMNAKER RI</div>
+            <div class="manpower-card__icon"><i class="fa-solid fa-shield-halved"></i></div>
+            <h4 class="manpower-card__name">Ahli K3 Listrik &amp; Konstruksi</h4>
+            <p class="manpower-card__role">HSE &amp; Electrical Safety Specialist</p>
+            <ul class="manpower-card__list">
+              <li><i class="fa-solid fa-circle-check"></i> Ahli K3 Umum &amp; Spesialis K3 Listrik Kemnaker</li>
+              <li><i class="fa-solid fa-circle-check"></i> Pengawasan keselamatan kerja area tegangan tinggi &amp; confined space</li>
+              <li><i class="fa-solid fa-circle-check"></i> Penerapan prosedur LOTO &amp; Job Safety Analysis (JSA)</li>
+            </ul>
+          </div>
+
+          <div class="manpower-card">
+            <div class="manpower-card__badge">LPJK / SKK KONSTRUKSI</div>
+            <div class="manpower-card__icon"><i class="fa-solid fa-compass-drafting"></i></div>
+            <h4 class="manpower-card__name">Tenaga Ahli Madya EPC</h4>
+            <p class="manpower-card__role">Engineering &amp; Project Management</p>
+            <ul class="manpower-card__list">
+              <li><i class="fa-solid fa-circle-check"></i> SKA / SKK Ahli Madya Teknik Elektro &amp; Mekanikal</li>
+              <li><i class="fa-solid fa-circle-check"></i> Ahli Manajemen Proyek Konstruksi &amp; Supervisi Lapangan</li>
+              <li><i class="fa-solid fa-circle-check"></i> Desain rekayasa struktural dan kalkulasi pondasi PLTS</li>
+            </ul>
+          </div>
+
+          <div class="manpower-card">
+            <div class="manpower-card__badge">KEMENTERIAN ESDM / BNSP</div>
+            <div class="manpower-card__icon"><i class="fa-solid fa-solar-panel"></i></div>
+            <h4 class="manpower-card__name">Teknisi &amp; Engineer Solar PV</h4>
+            <p class="manpower-card__role">Renewable Energy Specialist</p>
+            <ul class="manpower-card__list">
+              <li><i class="fa-solid fa-circle-check"></i> Sertifikasi Pemasangan &amp; Komisioning PLTS Terpusat/Atap</li>
+              <li><i class="fa-solid fa-circle-check"></i> Inspeksi kurva I-V, uji resistansi isolasi &amp; proteksi petir</li>
+              <li><i class="fa-solid fa-circle-check"></i> Sertifikasi teknisi baterai storage &amp; hybrid inverter</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================
+       PARTNERS MARQUEE (37+ Mitra & Klien Industri Lengkap)
+  ========================================================= -->
+  <section class="partners section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Mitra &amp; Klien</span>
+        <h2 class="section-title">Dipercaya oleh <span class="text-accent">Industri Terkemuka</span></h2>
+        <p class="section-desc">
+          Kolaborasi strategis bersama korporasi energi, pertambangan, manufaktur, dan institusi terkemuka.
+        </p>
+      </div>
+    </div>
+
+    <!-- Track 1: Scroll Kiri (Energi, Tambang & Industri) -->
+    <div class="partners__track-wrapper">
+      <div class="partners__track">
+        <!-- Set 1 -->
+        <div class="partner-card" title="Pertamina Hulu Mahakam">
+          <img src="assets/images/pertamina_hulu_mahakam.png" alt="Pertamina Hulu Mahakam" class="partner-card__img" loading="lazy" />
+        </div>
+        <div class="partner-card" title="Pertamina New & Renewable Energy">
+          <img src="assets/images/pertamina_new_&_renewable_energy.png" alt="Pertamina NRE" class="partner-card__img" loading="lazy" />
+        </div>
+        <div class="partner-card" title="PLN Indonesia Geothermal">
+          <img src="assets/images/pln indonesia geothermal.jpg" alt="PLN Indonesia Geothermal" class="partner-card__img" loading="lazy" />
+        </div>
+        <div class="partner-card" title="PLN Indonesia Power Priok">
+          <img src="assets/images/pln indonesia power priok.jpg" alt="PLN Indonesia Power Priok" class="partner-card__img" loading="lazy" />
+        </div>
+        <div class="partner-card" title="ENI">
+          <img src="assets/images/eni.png" alt="ENI" class="partner-card__img" loading="lazy" />
+        </div>
+        <div class="partner-card" title="Adaro">
+          <img src="assets/images/adaro.png" alt="Adaro" class="partner-card__img" loading="lazy" />
+        </div>
+        <div class="partner-card" title="Pama Persada">
+          <img src="assets/images/Pama_PERSADA.png" alt="Pama Persada" class="partner-card__img" loading="lazy" />
+        </div>
+        <div class="partner-card" title="Thiess">
+          <img src="assets/images/thiess.jpg" alt="Thiess" class="partner-card__img" loading="lazy" />
+        </div>
+        <div class="partner-card" title="RDMP Balikpapan JO">
+          <img src="assets/images/rdmp-balikpapan-jo.jpg" alt="RDMP Balikpapan JO" class="partner-card__img" loading="lazy" />
+        </div>
+        <div class="partner-card" title="Yamaha">
+          <img src="assets/images/yamaha.jpg" alt="Yamaha" class="partner-card__img" loading="lazy" />
+        </div>
+        <div class="partner-card" title="CLEO">
+          <img src="assets/images/cleo.jpg" alt="CLEO" class="partner-card__img" loading="lazy" />
+        </div>
+        <div class="partner-card" title="IDEC Wood">
+          <img src="assets/images/IDEC WOOD.jpg" alt="IDEC Wood" class="partner-card__img" loading="lazy" />
+        </div>
+        <div class="partner-card" title="MHU Coal">
+          <img src="assets/images/mhu_coal.png" alt="MHU Coal" class="partner-card__img" loading="lazy" />
+        </div>
+        <div class="partner-card" title="Orica Mining Service">
+          <img src="assets/images/orica_mining_service.jpg" alt="Orica Mining Service" class="partner-card__img" loading="lazy" />
+        </div>
+        <div class="partner-card" title="PT Refined Bangka Tin">
+          <img src="assets/images/pt_refined_bangka_tin.png" alt="PT Refined Bangka Tin" class="partner-card__img" loading="lazy" />
+        </div>
+        <div class="partner-card" title="PT Kutai Refinery Nusantara">
+          <img src="assets/images/pt-kutai-refinery-nusantara.jpg" alt="PT Kutai Refinery Nusantara" class="partner-card__img" loading="lazy" />
+        </div>
+        <div class="partner-card" title="PT Adindo Hutani Lestari">
+          <img src="assets/images/PT Adindo Hutani Lestari.jpg" alt="PT Adindo Hutani Lestari" class="partner-card__img" loading="lazy" />
+        </div>
+        <div class="partner-card" title="PT Dayatama Prima Energi">
+          <img src="assets/images/dayatama prima energi.png" alt="PT Dayatama Prima Energi" class="partner-card__img" loading="lazy" />
+        </div>
+
+        <!-- Set 1 Duplicate for Infinite Loop -->
+        <div class="partner-card" title="Pertamina Hulu Mahakam">
+          <img src="assets/images/pertamina_hulu_mahakam.png" alt="Pertamina Hulu Mahakam" class="partner-card__img" loading="lazy" />
+        </div>
+        <div class="partner-card" title="Pertamina New & Renewable Energy">
+          <img src="assets/images/pertamina_new_&_renewable_energy.png" alt="Pertamina NRE" class="partner-card__img" loading="lazy" />
+        </div>
+        <div class="partner-card" title="PLN Indonesia Geothermal">
+          <img src="assets/images/pln indonesia geothermal.jpg" alt="PLN Indonesia Geothermal" class="partner-card__img" loading="lazy" />
+        </div>
+        <div class="partner-card" title="PLN Indonesia Power Priok">
+          <img src="assets/images/pln indonesia power priok.jpg" alt="PLN Indonesia Power Priok" class="partner-card__img" loading="lazy" />
+        </div>
+        <div class="partner-card" title="ENI">
+          <img src="assets/images/eni.png" alt="ENI" class="partner-card__img" loading="lazy" />
+        </div>
+        <div class="partner-card" title="Adaro">
+          <img src="assets/images/adaro.png" alt="Adaro" class="partner-card__img" loading="lazy" />
+        </div>
+        <div class="partner-card" title="Pama Persada">
+          <img src="assets/images/Pama_PERSADA.png" alt="Pama Persada" class="partner-card__img" loading="lazy" />
+        </div>
+        <div class="partner-card" title="Thiess">
+          <img src="assets/images/thiess.jpg" alt="Thiess" class="partner-card__img" loading="lazy" />
+        </div>
+        <div class="partner-card" title="RDMP Balikpapan JO">
+          <img src="assets/images/rdmp-balikpapan-jo.jpg" alt="RDMP Balikpapan JO" class="partner-card__img" loading="lazy" />
+        </div>
+        <div class="partner-card" title="Yamaha">
+          <img src="assets/images/yamaha.jpg" alt="Yamaha" class="partner-card__img" loading="lazy" />
+        </div>
+        <div class="partner-card" title="CLEO">
+          <img src="assets/images/cleo.jpg" alt="CLEO" class="partner-card__img" loading="lazy" />
+        </div>
+        <div class="partner-card" title="IDEC Wood">
+          <img src="assets/images/IDEC WOOD.jpg" alt="IDEC Wood" class="partner-card__img" loading="lazy" />
+        </div>
+        <div class="partner-card" title="MHU Coal">
+          <img src="assets/images/mhu_coal.png" alt="MHU Coal" class="partner-card__img" loading="lazy" />
+        </div>
+        <div class="partner-card" title="Orica Mining Service">
+          <img src="assets/images/orica_mining_service.jpg" alt="Orica Mining Service" class="partner-card__img" loading="lazy" />
+        </div>
+        <div class="partner-card" title="PT Refined Bangka Tin">
+          <img src="assets/images/pt_refined_bangka_tin.png" alt="PT Refined Bangka Tin" class="partner-card__img" loading="lazy" />
+        </div>
+        <div class="partner-card" title="PT Kutai Refinery Nusantara">
+          <img src="assets/images/pt-kutai-refinery-nusantara.jpg" alt="PT Kutai Refinery Nusantara" class="partner-card__img" loading="lazy" />
+        </div>
+        <div class="partner-card" title="PT Adindo Hutani Lestari">
+          <img src="assets/images/PT Adindo Hutani Lestari.jpg" alt="PT Adindo Hutani Lestari" class="partner-card__img" loading="lazy" />
+        </div>
+        <div class="partner-card" title="PT Dayatama Prima Energi">
+          <img src="assets/images/dayatama prima energi.png" alt="PT Dayatama Prima Energi" class="partner-card__img" loading="lazy" />
+        </div>
+      </div>
+    </div>
+
+    <!-- Track 2: Scroll Kanan (Energi Terbarukan, Institusi & Manufaktur) -->
+    <div class="partners__track-wrapper">
+      <div class="partners__track partners__track--reverse">
+        <!-- Set 2 -->
+        <div class="partner-card" title="SUN Energy">
+          <img src="assets/images/sun energy.jpeg" alt="SUN Energy" class="partner-card__img" loading="lazy" />
+        </div>
+        <div class="partner-card" title="Sunterra">
+          <img src="assets/images/sunterra.png" alt="Sunterra" class="partner-card__img" loading="lazy" />
+        </div>
+        <div class="partner-card" title="ATW Solar">
+          <img src="assets/images/atwsolar.png" alt="ATW Solar" class="partner-card__img" loading="lazy" />
+        </div>
+        <div class="partner-card" title="Indo Tenaga Hijau">
+          <img src="assets/images/indo tenaga hijau.png" alt="Indo Tenaga Hijau" class="partner-card__img" loading="lazy" />
+        </div>
+        <div class="partner-card" title="Lein Power">
+          <img src="assets/images/lein power.png" alt="Lein Power" class="partner-card__img" loading="lazy" />
+        </div>
+        <div class="partner-card" title="Len SEI">
+          <img src="assets/images/len SEI.jpg" alt="Len SEI" class="partner-card__img" loading="lazy" />
+        </div>
+        <div class="partner-card" title="Gerilya">
+          <img src="assets/images/GERILYA.png" alt="Gerilya" class="partner-card__img" loading="lazy" />
+        </div>
+        <div class="partner-card" title="Bank Indonesia">
+          <img src="assets/images/bank indonesia.png" alt="Bank Indonesia" class="partner-card__img" loading="lazy" />
+        </div>
+        <div class="partner-card" title="HSBC">
+          <img src="assets/images/hsbc.png" alt="HSBC" class="partner-card__img" loading="lazy" />
+        </div>
+        <div class="partner-card" title="Peruri">
+          <img src="assets/images/peruri.png" alt="Peruri" class="partner-card__img" loading="lazy" />
+        </div>
+        <div class="partner-card" title="Cogindo">
+          <img src="assets/images/COGINDO.png" alt="Cogindo" class="partner-card__img" loading="lazy" />
+        </div>
+        <div class="partner-card" title="Hexindo">
+          <img src="assets/images/hexindo.png" alt="Hexindo" class="partner-card__img" loading="lazy" />
+        </div>
+        <div class="partner-card" title="AISIN">
+          <img src="assets/images/AISIN.jpg" alt="AISIN" class="partner-card__img" loading="lazy" />
+        </div>
+        <div class="partner-card" title="ADVICS">
+          <img src="assets/images/advics.jpg" alt="ADVICS" class="partner-card__img" loading="lazy" />
+        </div>
+        <div class="partner-card" title="Merck">
+          <img src="assets/images/merck.png" alt="Merck" class="partner-card__img" loading="lazy" />
+        </div>
+        <div class="partner-card" title="M.P. Evans Group PLC">
+          <img src="assets/images/M.P_Evans_Group_PLC.png" alt="M.P. Evans Group PLC" class="partner-card__img" loading="lazy" />
+        </div>
+        <div class="partner-card" title="PT Bhumi Phala Perkasa">
+          <img src="assets/images/pt bhumi phala perkasa.png" alt="PT Bhumi Phala Perkasa" class="partner-card__img" loading="lazy" />
+        </div>
+        <div class="partner-card" title="PT H&H">
+          <img src="assets/images/pt h&h.png" alt="PT H&H" class="partner-card__img" loading="lazy" />
+        </div>
+        <div class="partner-card" title="Institut Teknologi Kalimantan (ITK)">
+          <img src="assets/images/itk.png" alt="ITK" class="partner-card__img" loading="lazy" />
+        </div>
+        <div class="partner-card" title="SMK Airlangga Balikpapan">
+          <img src="assets/images/smk airlangga balikpapan.png" alt="SMK Airlangga Balikpapan" class="partner-card__img" loading="lazy" />
+        </div>
+        <div class="partner-card" title="SMKN Balikpapan">
+          <img src="assets/images/smkn balikpapa.jpg" alt="SMKN Balikpapan" class="partner-card__img" loading="lazy" />
+        </div>
+
+        <!-- Set 2 Duplicate for Infinite Loop -->
+        <div class="partner-card" title="SUN Energy">
+          <img src="assets/images/sun energy.jpeg" alt="SUN Energy" class="partner-card__img" loading="lazy" />
+        </div>
+        <div class="partner-card" title="Sunterra">
+          <img src="assets/images/sunterra.png" alt="Sunterra" class="partner-card__img" loading="lazy" />
+        </div>
+        <div class="partner-card" title="ATW Solar">
+          <img src="assets/images/atwsolar.png" alt="ATW Solar" class="partner-card__img" loading="lazy" />
+        </div>
+        <div class="partner-card" title="Indo Tenaga Hijau">
+          <img src="assets/images/indo tenaga hijau.png" alt="Indo Tenaga Hijau" class="partner-card__img" loading="lazy" />
+        </div>
+        <div class="partner-card" title="Lein Power">
+          <img src="assets/images/lein power.png" alt="Lein Power" class="partner-card__img" loading="lazy" />
+        </div>
+        <div class="partner-card" title="Len SEI">
+          <img src="assets/images/len SEI.jpg" alt="Len SEI" class="partner-card__img" loading="lazy" />
+        </div>
+        <div class="partner-card" title="Gerilya">
+          <img src="assets/images/GERILYA.png" alt="Gerilya" class="partner-card__img" loading="lazy" />
+        </div>
+        <div class="partner-card" title="Bank Indonesia">
+          <img src="assets/images/bank indonesia.png" alt="Bank Indonesia" class="partner-card__img" loading="lazy" />
+        </div>
+        <div class="partner-card" title="HSBC">
+          <img src="assets/images/hsbc.png" alt="HSBC" class="partner-card__img" loading="lazy" />
+        </div>
+        <div class="partner-card" title="Peruri">
+          <img src="assets/images/peruri.png" alt="Peruri" class="partner-card__img" loading="lazy" />
+        </div>
+        <div class="partner-card" title="Cogindo">
+          <img src="assets/images/COGINDO.png" alt="Cogindo" class="partner-card__img" loading="lazy" />
+        </div>
+        <div class="partner-card" title="Hexindo">
+          <img src="assets/images/hexindo.png" alt="Hexindo" class="partner-card__img" loading="lazy" />
+        </div>
+        <div class="partner-card" title="AISIN">
+          <img src="assets/images/AISIN.jpg" alt="AISIN" class="partner-card__img" loading="lazy" />
+        </div>
+        <div class="partner-card" title="ADVICS">
+          <img src="assets/images/advics.jpg" alt="ADVICS" class="partner-card__img" loading="lazy" />
+        </div>
+        <div class="partner-card" title="Merck">
+          <img src="assets/images/merck.png" alt="Merck" class="partner-card__img" loading="lazy" />
+        </div>
+        <div class="partner-card" title="M.P. Evans Group PLC">
+          <img src="assets/images/M.P_Evans_Group_PLC.png" alt="M.P. Evans Group PLC" class="partner-card__img" loading="lazy" />
+        </div>
+        <div class="partner-card" title="PT Bhumi Phala Perkasa">
+          <img src="assets/images/pt bhumi phala perkasa.png" alt="PT Bhumi Phala Perkasa" class="partner-card__img" loading="lazy" />
+        </div>
+        <div class="partner-card" title="PT H&H">
+          <img src="assets/images/pt h&h.png" alt="PT H&H" class="partner-card__img" loading="lazy" />
+        </div>
+        <div class="partner-card" title="Institut Teknologi Kalimantan (ITK)">
+          <img src="assets/images/itk.png" alt="ITK" class="partner-card__img" loading="lazy" />
+        </div>
+        <div class="partner-card" title="SMK Airlangga Balikpapan">
+          <img src="assets/images/smk airlangga balikpapan.png" alt="SMK Airlangga Balikpapan" class="partner-card__img" loading="lazy" />
+        </div>
+        <div class="partner-card" title="SMKN Balikpapan">
+          <img src="assets/images/smkn balikpapa.jpg" alt="SMKN Balikpapan" class="partner-card__img" loading="lazy" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================
+       7. CONTACT SECTION (File Terpisah: sections/contact.html | css/contact.css | js/form.js)
+  ========================================================= -->
+  <section class="contact section section--dark" id="contact">
+    <div class="container">
+      <div class="section-header section-header--light">
+        <span class="section-tag section-tag--light">Hubungi Kami</span>
+        <h2 class="section-title">Mari <span class="text-accent-light">Berkolaborasi</span></h2>
+        <p class="section-desc section-desc--light">
+          Tim kami siap membantu Anda menemukan solusi energi terbaik. Hubungi kami sekarang.
+        </p>
+      </div>
+
+      <div class="contact__grid">
+        <div class="contact__info">
+          <div class="contact-item">
+            <div class="contact-item__icon"><i class="fa-solid fa-location-dot"></i></div>
+            <div class="contact-item__content">
+              <h4>Alamat Kantor</h4>
+              <p>Sentra Eropa Blok AC 7 No.1, RT.22<br />Damai Baru, Balikpapan Selatan<br />Kota Balikpapan, Kalimantan Timur 76114</p>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-item__icon"><i class="fa-solid fa-phone"></i></div>
+            <div class="contact-item__content">
+              <h4>Telepon</h4>
+              <a href="tel:+6282151116155">0821-5111-6155</a>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-item__icon"><i class="fa-solid fa-envelope"></i></div>
+            <div class="contact-item__content">
+              <h4>Email</h4>
+              <a href="mailto:borneoenergyharapan@gmail.com">borneoenergyharapan@gmail.com</a>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-item__icon"><i class="fa-brands fa-instagram"></i></div>
+            <div class="contact-item__content">
+              <h4>Instagram</h4>
+              <a href="https://instagram.com/elp_beh" target="_blank" rel="noopener">@elp_beh</a>
+            </div>
+          </div>
+
+          <div class="contact__social">
+            <a href="https://wa.me/6282151116155" target="_blank" rel="noopener" class="social-btn social-btn--wa" aria-label="WhatsApp">
+              <i class="fa-brands fa-whatsapp"></i> WhatsApp
+            </a>
+            <a href="https://instagram.com/elp_beh" target="_blank" rel="noopener" class="social-btn social-btn--ig" aria-label="Instagram">
+              <i class="fa-brands fa-instagram"></i> Instagram
+            </a>
+          </div>
+
+          <!-- Google Maps Embed -->
+          <div class="contact__map">
+            <div class="contact__map-label">
+              <i class="fa-solid fa-map-location-dot"></i> Lokasi Kantor Operasional
+            </div>
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.847118182046!2d116.8659104!3d-1.2642211!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2df147bf9b7529f7%3A0xb2faea1eb2e519c5!2sSentra%20Eropa%20Balikpapan%20Baru!5e0!3m2!1sid!2sid!4v1700000000000!5m2!1sid!2sid"
+              width="100%"
+              height="220"
+              style="border:0;"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+              title="Lokasi Kantor Borneo Energy Harapan - Balikpapan">
+            </iframe>
+          </div>
+        </div>
+
+        <form class="contact__form" id="contactForm" novalidate>
+          <div class="form-header">
+            <h3>Konsultasi &amp; Pengajuan Kebutuhan Proyek</h3>
+            <p>Isi formulir di bawah ini untuk terhubung langsung dengan tim engineer BEH melalui WhatsApp resmi.</p>
+          </div>
+          <div class="form-group">
+            <label for="name">Nama Lengkap</label>
+            <input type="text" id="name" name="name" placeholder="Masukkan nama Anda" required />
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="email@perusahaan.com" required />
+          </div>
+          <div class="form-group">
+            <label for="company">Perusahaan</label>
+            <input type="text" id="company" name="company" placeholder="Nama perusahaan Anda" />
+          </div>
+          <div class="form-group">
+            <label for="service">Layanan yang Diminati</label>
+            <select id="service" name="service">
+              <option value="">Pilih layanan...</option>
+              <option>Solar PV Systems</option>
+              <option>Civil &amp; Structure EPC</option>
+              <option>Panel Maker &amp; Elektrikal</option>
+              <option>Power Plant</option>
+              <option>Oil &amp; Gas</option>
+              <option>Material &amp; General Supply</option>
+              <option>Electrical Supply (Cable Gland, LOTO, Kabel, Alat Uji)</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="message">Pesan Kebutuhan</label>
+            <textarea id="message" name="message" rows="4" placeholder="Deskripsikan kebutuhan proyek atau spesifikasi pengadaan Anda..." required></textarea>
+          </div>
+          <button type="submit" class="btn btn--primary btn--full btn--submit-wa">
+            <i class="fa-brands fa-whatsapp"></i> Kirim via WhatsApp Cepat
+          </button>
+          <p class="form-note" id="formNote"></p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================
+       8. FOOTER (File Terpisah: sections/footer.html | css/footer.css | js/scroll.js)
+  ========================================================= -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div class="footer__brand">
+        <div class="footer__logo">
+          <img src="assets/images/logo-beh.png" alt="Logo Borneo Energy Harapan" class="footer__logo-img" />
+          <div class="logo-text">
+            <span class="logo-text__main">BEH</span>
+            <span class="logo-text__sub">Borneo Energy Harapan</span>
+          </div>
+        </div>
+        <p class="footer__tagline">"Together for a Brighter Future"</p>
+        <div class="footer__tagline footer__tagline--sub">
+          <span>Sister company of</span>
+          <img src="assets/images/logo-energy-lima-pilar.png" alt="Energy Lima Pilar" class="footer__sister-logo" />
+        </div>
+      </div>
+
+      <div class="footer__col">
+        <h5>Layanan</h5>
+        <ul>
+          <li><a href="#services">Solar PV Systems</a></li>
+          <li><a href="#services">Civil &amp; Structure EPC</a></li>
+          <li><a href="#services">Panel Maker &amp; Elektrikal</a></li>
+          <li><a href="#services">Power Plant</a></li>
+          <li><a href="#services">Oil &amp; Gas</a></li>
+        </ul>
+      </div>
+
+      <div class="footer__col">
+        <h5>Perusahaan</h5>
+        <ul>
+          <li><a href="#about">Tentang Kami</a></li>
+          <li><a href="#projects">Portofolio Proyek</a></li>
+          <li><a href="#cert">Sertifikasi</a></li>
+          <li><a href="#contact">Hubungi Kami</a></li>
+        </ul>
+      </div>
+
+      <div class="footer__col footer__col--contact">
+        <h5>Kontak</h5>
+        <ul>
+          <li><i class="fa-solid fa-location-dot"></i> Sentra Eropa Blok AC 7 No.1, Balikpapan, Kaltim 76114</li>
+          <li><i class="fa-solid fa-phone"></i> <a href="tel:+6282151116155">0821-5111-6155</a></li>
+          <li><i class="fa-solid fa-envelope"></i> <a href="mailto:borneoenergyharapan@gmail.com">borneoenergyharapan@gmail.com</a></li>
+          <li><i class="fa-brands fa-instagram"></i> <a href="https://instagram.com/elp_beh" target="_blank" rel="noopener">@elp_beh</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer__bottom">
+      <div class="container footer__bottom-inner">
+        <p>&copy; <span id="copyrightYear"></span> Borneo Energy Harapan (BEH). Hak Cipta Dilindungi.</p>
+        <p>Balikpapan, Kalimantan Timur — Indonesia</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to Top -->
+  <button class="back-to-top" id="backToTop" aria-label="Kembali ke atas">
+    <i class="fa-solid fa-chevron-up"></i>
+  </button>
+
+  <!-- Floating WhatsApp Widget -->
+  <a href="https://wa.me/6282151116155?text=Halo%20Borneo%20Energy%20Harapan%2C%20saya%20ingin%20berkonsultasi%20mengenai%20proyek%20energi%2FEPC"
+     target="_blank"
+     rel="noopener"
+     class="whatsapp-float"
+     aria-label="Konsultasi Cepat via WhatsApp">
+    <i class="fa-brands fa-whatsapp"></i>
+    <span class="whatsapp-float__tooltip">Konsultasi Cepat</span>
+  </a>
+
+  <!-- =========================================================
+       MODUL JAVASCRIPT TERPISAH PER FUNGSI (js/)
+  ========================================================= -->
+  <script src="js/navbar.js"></script>
+  <script src="js/counters.js"></script>
+  <script src="js/filter.js"></script>
+  <script src="js/form.js"></script>
+  <script src="js/scroll.js"></script>
+  <script src="js/particles.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>
