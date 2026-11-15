@@ -6,35 +6,57 @@
 /* Layar Laptop Menengah (≤ 1200px) - Switch ke Burger Menu agar Navbar tetap rapih dan tidak tertekuk */
 @media (max-width: 1200px) {
   .navbar__cta    { display: none; }
-  .navbar__burger { display: flex; }
+  .navbar__burger { 
+    display: flex;
+    z-index: 1100;
+    position: relative;
+  }
 
   .navbar__nav {
     position: fixed;
     top: 0; left: 0; right: 0; bottom: 0;
-    background: rgba(10,22,40,.98);
-    backdrop-filter: blur(20px);
+    width: 100vw;
+    height: 100vh;
+    background: #0A1628;
+    background: rgba(10, 22, 40, 0.98);
+    backdrop-filter: blur(24px);
+    -webkit-backdrop-filter: blur(24px);
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     opacity: 0;
+    visibility: hidden;
     pointer-events: none;
-    transition: opacity .3s ease;
-    z-index: 999;
+    transition: opacity .3s ease, visibility .3s ease;
+    z-index: 1050;
+    padding: 80px 20px 40px;
+    overflow-y: auto;
   }
   .navbar__nav.open {
     opacity: 1;
+    visibility: visible;
     pointer-events: auto;
   }
 
   .navbar__list {
     flex-direction: column;
-    gap: 12px;
+    gap: 16px;
     text-align: center;
+    width: 100%;
+    margin: auto 0;
   }
   .navbar__link {
     font-size: 1.25rem;
+    font-weight: 600;
+    color: rgba(255, 255, 255, 0.9);
     padding: 10px 24px;
-    display: block;
+    display: inline-block;
+  }
+  .navbar__link:hover,
+  .navbar__link.active {
+    color: var(--sky, #42A5F5);
+    background: rgba(66, 165, 245, 0.12);
   }
 }
 

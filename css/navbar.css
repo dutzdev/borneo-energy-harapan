@@ -6,7 +6,7 @@
 .navbar {
   position: fixed;
   top: 0; left: 0; right: 0;
-  z-index: 1000;
+  z-index: 1050;
   background: transparent;
   transition: background .35s ease, box-shadow .35s ease, padding .35s ease;
   padding: 20px 0;

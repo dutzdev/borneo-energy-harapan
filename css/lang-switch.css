@@ -94,9 +94,10 @@
   }
 
   .navbar__nav {
+    background: #0A1628 !important;
     background: rgba(10, 22, 40, 0.98) !important;
-    backdrop-filter: blur(20px);
-    -webkit-backdrop-filter: blur(20px);
+    backdrop-filter: blur(24px);
+    -webkit-backdrop-filter: blur(24px);
   }
 
   .lang-switch {
@@ -107,6 +108,8 @@
     padding: 3px 6px;
     margin-left: auto;
     margin-right: 6px;
+    z-index: 1100;
+    position: relative;
   }
 
   .lang-btn {
