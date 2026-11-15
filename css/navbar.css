@@ -122,7 +122,8 @@
   border: none;
   cursor: pointer;
   padding: 4px;
-  margin-left: auto;
+  margin-left: 0;
+  flex-shrink: 0;
 }
 .navbar__burger span {
   display: block;

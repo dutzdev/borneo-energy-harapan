@@ -24,7 +24,15 @@
       </ul>
     </nav>
 
-    <a href="#contact" class="btn btn--primary navbar__cta">Hubungi Kami</a>
+      <!-- Bilingual Switcher (ID | EN) -->
+      <div class="lang-switch" role="group" aria-label="Language Selector">
+        <span class="lang-switch__icon"><i class="fa-solid fa-globe"></i></span>
+        <button type="button" class="lang-btn active" data-lang="id" aria-pressed="true">ID</button>
+        <span class="lang-switch__divider">|</span>
+        <button type="button" class="lang-btn" data-lang="en" aria-pressed="false">EN</button>
+      </div>
+
+      <a href="#contact" class="btn btn--primary navbar__cta" data-i18n="nav.cta">Hubungi Kami</a>
 
     <button class="navbar__burger" id="burgerBtn" aria-label="Buka Menu Navigasi" aria-expanded="false">
       <span></span><span></span><span></span>

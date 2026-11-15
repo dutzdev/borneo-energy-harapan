@@ -5,6 +5,7 @@
 
 @import 'variables.css';
 @import 'navbar.css';
+@import 'lang-switch.css';
 @import 'hero.css';
 @import 'about.css';
 @import 'services.css';

@@ -87,8 +87,19 @@
   .section-header { margin-bottom: 44px; }
 
   /* Hero */
+  .hero__content {
+    padding-top: 130px;
+    padding-bottom: 70px;
+  }
+  .hero__badge {
+    margin-bottom: 18px;
+    font-size: .78rem;
+    padding: 6px 16px;
+  }
   .hero__stats { gap: 16px; }
+  .stat-item__value { display: inline-flex; align-items: baseline; gap: 2px; }
   .stat-item__number { font-size: 1.7rem; }
+  .stat-item__suffix { font-size: 1.25rem; }
   .hero__scroll-indicator { display: none; }
 
   /* About */
@@ -160,10 +171,16 @@
 
 /* Ponsel Kecil (≤ 480px) */
 @media (max-width: 480px) {
+  .hero__content   { padding-top: 120px; }
   .hero__actions   { flex-direction: column; }
   .btn--lg         { width: 100%; justify-content: center; }
-  .hero__stats     { flex-wrap: wrap; justify-content: center; }
-  .stat-divider    { display: none; }
+  .hero__stats     { flex-wrap: nowrap; justify-content: space-between; width: 100%; gap: 10px; }
+  .stat-item       { align-items: center; text-align: center; flex: 1; }
+  .stat-item__value { justify-content: center; }
+  .stat-item__number { font-size: 1.55rem; }
+  .stat-item__suffix { font-size: 1.15rem; }
+  .stat-item__label { font-size: .68rem; text-align: center; }
+  .stat-divider    { display: block; height: 36px; opacity: 0.25; }
   .contact__social { flex-direction: column; }
   .social-btn      { justify-content: center; }
 }

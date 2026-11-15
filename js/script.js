@@ -55,6 +55,7 @@
     console.info('[BEH App] Memulai inisialisasi website Borneo Energy Harapan...');
 
     if (global.BEH.navbar)    safeExecute('Navbar', global.BEH.navbar.init);
+    if (global.BEH.i18n)      safeExecute('Bilingual_i18n', global.BEH.i18n.init);
     if (global.BEH.counters)  safeExecute('Counters', global.BEH.counters.init);
     if (global.BEH.filter)    safeExecute('ProjectFilter', global.BEH.filter.init);
     if (global.BEH.form)      safeExecute('ContactForm', global.BEH.form.init);

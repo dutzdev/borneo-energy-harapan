@@ -120,6 +120,13 @@
   align-items: flex-start;
 }
 
+.stat-item__value {
+  display: inline-flex;
+  align-items: baseline;
+  gap: 2px;
+  line-height: 1;
+}
+
 .stat-item__number {
   font-family: var(--font-head);
   font-size: 2.2rem;
@@ -132,6 +139,9 @@
   font-size: 1.5rem;
   font-weight: 800;
   color: var(--sky);
+  display: inline-block;
+  line-height: 1;
+  vertical-align: baseline;
 }
 .stat-item__label {
   font-size: .78rem;
